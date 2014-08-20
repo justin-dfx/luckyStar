@@ -1,0 +1,13 @@
+[30-Apr-2014 02:18:16] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: YES) in D:\Site\ceshi\wx\pub\system\libs\mysql.class.php on line 60
+[30-Apr-2014 02:32:46] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 67
+[30-Apr-2014 02:32:46] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 72
+[30-Apr-2014 02:32:46] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 74
+[30-Apr-2014 02:33:22] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 67
+[30-Apr-2014 02:33:22] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 72
+[30-Apr-2014 02:33:22] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 74
+[30-Apr-2014 02:33:59] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 67
+[30-Apr-2014 02:33:59] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 72
+[30-Apr-2014 02:33:59] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 74
+[30-Apr-2014 09:37:01] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 67
+[30-Apr-2014 09:37:01] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 72
+[30-Apr-2014 09:37:01] PHP Notice:  Use of undefined constant G_BANBEN_NUMBER - assumed 'G_BANBEN_NUMBER' in D:\Site\ceshi\wx\pub\system\modules\admin\index.action.php on line 74
