@@ -1,0 +1,26 @@
+<?php
+return array (
+  0 => 'id',
+  1 => 'restaurant_id',
+  2 => 'member_id',
+  3 => 'order_sn',
+  4 => 'cart_ids',
+  5 => 'total_money',
+  6 => 'status',
+  7 => 'type',
+  8 => 'create_time',
+  9 => 'update_time',
+  10 => 'delivery_time',
+  11 => 'complete_time',
+  12 => 'reservation_time',
+  13 => 'people',
+  14 => 'cancel_time',
+  15 => 'consignee',
+  16 => 'address',
+  17 => 'tel',
+  18 => 'email',
+  19 => 'payment',
+  '_autoinc' => true,
+  '_pk' => 'id',
+);
+?>

@@ -1,0 +1,1 @@
+[ 2014-07-28T01:15:57+08:00 ] ERR: (ThinkException) Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)

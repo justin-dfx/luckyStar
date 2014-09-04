@@ -1,0 +1,26 @@
+<div class="page">
+	<div class="pageContent pageForm">
+		<div class="pageFormContent" layoutH="58">
+		<table class="list">
+		<tr class="row" ><th colspan="3" class="space">订单详细信息</th></tr>
+		<tr class="row" ><td width="15%">OrderSn：</td><td>{$list.order_sn}</td></tr>
+        <tr class="row" ><td width="15%">Member：</td><td>{:W('ShowMember',array(id=>$list['member_id']))}</td></tr>
+        <tr class="row" ><td width="15%">Restaurant：</td><td>{:W('ShowRestaurant',array(id=>$list['restaurant_id']))}</td></tr>
+        <tr class="row" ><td width="15%">OrderStatus：</td><td><if condition='$list["status"] eq 0'>Cancel<else/>Orders</if></td></tr>
+        <tr class="row" ><td width="15%">Appointment：</td><td>{$list.consignee}</td></tr>
+        <tr class="row" ><td width="15%">TEL：</td><td>{$list.tel}</td></tr>
+        <tr class="row" ><td width="15%">PeopleNumber：</td><td>{$list.people}</td></tr>
+        <tr class="row" ><td width="15%">ReservationTime：</td><td>{:date('Y-m-d H:i',$list['reservation_time'])}</td></tr>
+        <tr class="row" ><td width="15%">OrdersTime：</td><td>{:date('Y-m-d H:i:s',$list['create_time'])}</td></tr>
+        <if condition='$list["cancel_time"] neq 0'>
+        <tr class="row" ><td width="15%">CancelTime：</td><td>{:date('Y-m-d H:i:s',$list['cancel_time'])}</td></tr>
+        </if>
+		</table>
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">关闭</button></div></div></li>
+			</ul>
+		</div>
+	</div>
+</div>

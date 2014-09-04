@@ -1,0 +1,38 @@
+[ 2014-06-30T09:18:01+08:00 ] NOTIC: [2048] Declaration of CustomerAction::index() should be compatible with that of CommonAction::index() CustomerAction.class.php 第 2 行.
+[ 2014-06-30T09:18:03+08:00 ] SQL: SHOW COLUMNS FROM on_member [ RunTime:0.497958s ]
+[ 2014-06-30T09:18:03+08:00 ] SQL: SHOW COLUMNS FROM on_member_address [ RunTime:0.066878s ]
+[ 2014-06-30T09:18:03+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.204884s ]
+[ 2014-06-30T09:18:03+08:00 ] SQL: SELECT * FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) [ RunTime:0.085635s ]
+[ 2014-06-30T09:18:03+08:00 ] NOTIC: [8] Undefined variable: member_id CustomerAction.class.php 第 10 行.
+[ 2014-06-30T09:18:04+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member_address.* FROM `on_member_address` LEFT JOIN on_member ON on_member_address.member_id=on_member.id WHERE ( `member_id` IN ('1','1','1','1','1','') ) [ RunTime:0.108065s ]
+[ 2014-06-30T09:18:05+08:00 ] NOTIC: [8] Undefined index:  fe0b3842d05b84847dc2f3f3011b314c.php 第 38 行.
+[ 2014-06-30T09:18:05+08:00 ] NOTIC: [2048] Declaration of CustomerAction::index() should be compatible with that of CommonAction::index() CustomerAction.class.php 第 2 行.
+[ 2014-06-30T09:18:06+08:00 ] SQL: SHOW COLUMNS FROM on_member [ RunTime:0.005664s ]
+[ 2014-06-30T09:18:06+08:00 ] SQL: SHOW COLUMNS FROM on_member_address [ RunTime:0.004205s ]
+[ 2014-06-30T09:18:06+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.005289s ]
+[ 2014-06-30T09:18:06+08:00 ] SQL: SELECT * FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) [ RunTime:0.000913s ]
+[ 2014-06-30T09:18:06+08:00 ] NOTIC: [8] Undefined variable: member_id CustomerAction.class.php 第 10 行.
+[ 2014-06-30T09:18:06+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member_address.* FROM `on_member_address` LEFT JOIN on_member ON on_member_address.member_id=on_member.id WHERE ( `member_id` IN ('1','1','1','1','1','') ) [ RunTime:0.000754s ]
+[ 2014-06-30T09:18:06+08:00 ] NOTIC: [8] Undefined index:  fe0b3842d05b84847dc2f3f3011b314c.php 第 38 行.
+[ 2014-06-30T09:18:08+08:00 ] NOTIC: [2048] Declaration of CustomerAction::index() should be compatible with that of CommonAction::index() CustomerAction.class.php 第 2 行.
+[ 2014-06-30T09:18:08+08:00 ] SQL: SHOW COLUMNS FROM on_member [ RunTime:0.005493s ]
+[ 2014-06-30T09:18:08+08:00 ] SQL: SHOW COLUMNS FROM on_member_address [ RunTime:0.004586s ]
+[ 2014-06-30T09:18:08+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.004300s ]
+[ 2014-06-30T09:18:08+08:00 ] SQL: SELECT * FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) [ RunTime:0.000568s ]
+[ 2014-06-30T09:18:08+08:00 ] NOTIC: [8] Undefined variable: member_id CustomerAction.class.php 第 10 行.
+[ 2014-06-30T09:18:08+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member_address.* FROM `on_member_address` LEFT JOIN on_member ON on_member_address.member_id=on_member.id WHERE ( `member_id` IN ('1','1','1','1','1','') ) [ RunTime:0.000824s ]
+[ 2014-06-30T09:18:08+08:00 ] NOTIC: [8] Undefined index:  fe0b3842d05b84847dc2f3f3011b314c.php 第 38 行.
+[ 2014-06-30T14:57:08+08:00 ] NOTIC: [2048] Declaration of CustomerAction::index() should be compatible with that of CommonAction::index() CustomerAction.class.php 第 2 行.
+[ 2014-06-30T14:57:08+08:00 ] SQL: SHOW COLUMNS FROM on_member [ RunTime:0.010559s ]
+[ 2014-06-30T14:57:08+08:00 ] SQL: SHOW COLUMNS FROM on_member_address [ RunTime:0.008899s ]
+[ 2014-06-30T14:57:08+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.010115s ]
+[ 2014-06-30T14:57:08+08:00 ] SQL: SELECT * FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) [ RunTime:0.000707s ]
+[ 2014-06-30T14:57:08+08:00 ] NOTIC: [8] Undefined variable: member_id CustomerAction.class.php 第 10 行.
+[ 2014-06-30T14:57:08+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member_address.* FROM `on_member_address` LEFT JOIN on_member ON on_member_address.member_id=on_member.id WHERE ( `member_id` IN ('1','1','1','1','1','') ) [ RunTime:0.001430s ]
+[ 2014-06-30T14:57:08+08:00 ] NOTIC: [8] Undefined index:  fe0b3842d05b84847dc2f3f3011b314c.php 第 38 行.
+[ 2014-06-30T14:57:11+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 42 行.
+[ 2014-06-30T14:57:43+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 42 行.
+[ 2014-06-30T14:58:12+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 42 行.
+[ 2014-06-30T14:58:17+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-06-30T17:10:17+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-06-30T17:10:20+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 42 行.

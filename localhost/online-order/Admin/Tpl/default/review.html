@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>restocordobaordering</title>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="js/Togle.js"></script>
+<link href="css/adminMain.css" rel="stylesheet" type="text/css" />
+<link href="css/south-street/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
+
+
+<!-- GOOGLE API KEY FOR DREAM HOST:  AIzaSyCkRkSd4hQornJOYjYMoHqi3-Wv4hVOOgg-->
+<!-- GOOGLE API KEY FOR LOCAL PROJECT:  ABQIAAAAPpaOjFQ_miNP74G3g3O7oBTTwBGlz0OqYPu6tmNrU0ToxRrT5hQhlPr8PLUNIxb0D5FrOa5lJ1tp6w-->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBT2sOPbIDLELZVjk6vPcGs87xqabq2jcs&sensor=false" type="text/javascript"></script>
+<!--<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyBT2sOPbIDLELZVjk6vPcGs87xqabq2jcs" type="text/javascript"></script> -->
+</script>
+<script type="text/javascript" language="javascript">
+	function initialize() {
+		geocoder = new google.maps.Geocoder();
+	}
+</script>
+
+</head>
+
+<body  onLoad="initialize();">
+<div id="maincontainer">
+	<div id="header">
+		<div id="top">
+			<div id="top_left"></div>
+			<div id="top_right"></div>
+		</div><!--End top Div-->
+    </div><!--End header Div-->        
+    <div id="text_holder">
+        <div id="logo_area">
+        	<div id="logo"><img src="images/man_img.png" width="57" height="74" /></div>
+        	<div id="logo_text">ADMINISTRATION PANEL</div>
+        	<div id="login_text"><strong>Welcome</strong>&nbsp;&nbsp;Store Owner, Chang J Wu&nbsp;&nbsp;|&nbsp;&nbsp;<a href="logout.php">Log out</a></div>
+        	<br style="clear:both" />
+        </div>                
+        <!--End logo_area Div-->
+        <div id="page_content">
+        	<div id="navigation_links">
+        		<div id="navigation">
+        			<div class="links not"><a href="index.html" >Restaurants (2)</a></div>
+        			<div class="links not"><a href="changepass.html" >Change Password</a></div>
+        			<div class="links not"><a href="apikey.html" >API Key</a></div>
+        			<div class="links selected"><a href="review.html" >Pending Review</a></div>
+        			<br style="clear:both" />
+        		</div>
+        		<!--End navigation Div-->
+            </div>
+            <!--End navigation_links Div-->
+            <div id="tab_items">
+            	<ul>
+            		<li><a href="?mod=resturant&amp;item=main">Restaurants Listing</a></li>
+            	</ul>
+            </div>
+            <div id="contents">
+            	<div id="main_heading">
+            		<form id="searchRestByUserFrm" name="searchRestByUserFrm" method="post" action="?mod=resturant">
+	    			<select name="search_by" id="search_by" style="font-size:19px; margin-right:3px" onchange="" >
+	    				<option value="0">===Search By===</option>
+       		            <option value="1" >By Name</option>
+       		            <option value="2" >By Email</option>
+    		            <option value="3" >By Phone</option>
+     		            <option value="4" >By Zip</option>
+     		            <option value="5" >By Orders Status</option>
+               		    <option value="6" >By Chargify Subscription ID</option>
+       			    </select>
+       			    <input name="search_field"  id="search_field" style="font-size:18px;" value="" type="text" />
+		            <select name="search_field_1" id="search_field_1" style="font-size:18px; display: none;">
+			    		<option value="green" >Green</option>
+				    	<option value="yellow" >Yellow</option>
+				    	<option value="red" >Red</option>
+				    	<option value="grey" >Grey</option>
+				    	<option value="deactivated" >Deactivated</option>
+				    </select>
+      		        <label>
+       		            <input type="submit" name="sch_button" id="sch_button" value="Submit" class="btn"/>
+       		        </label>
+    		    </form>
+		    </div>
+		    <div id="BodyContainer">
+		    	<strong  style="font-size:18px;">&nbsp;Pending&nbsp;Review</strong><br />
+		    	<table width="100%" cellpadding="4" cellspacing="0" class="listig_table">
+                    <tbody>
+                    	<tr>
+                        <th width="34"><strong>#</strong></th>
+                        <th width="66"><strong>Order Date</strong></th>
+	                    <th width="80"><strong>Delivery/Pickup</strong></th>
+                        <th width="80"><strong>Customer Name</strong></th>
+                        <th width="40"><strong>Action</strong></th>
+                        </tr>
+                        <!-- test code ends-->
+                        <tr>
+                        <td><a href="./?mod=order&amp;item=detail&amp;OrderID=34180">34180</a></td>
+                        <td>03/31/2014</td>
+	                    <td>Pickup</td>
+                        <td>Mary Lin </td>
+                        <td><a href="review_edit.html">See&nbsp;more</a></td>
+                        </tr>
+                        <tr>
+                        <td><a href="./?mod=order&amp;item=detail&amp;OrderID=34180">34180</a></td>
+                        <td>03/31/2014</td>
+	                    <td>Pickup</td>
+                        <td>Mary Lin </td>
+                        <td><a href="review_edit.html">See&nbsp;more</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br style="clear:both;" />
+ </div>
+<!--End body Div-->	
+</div>   
+            
+</div><!--End text_holder Div-->	
+        <div id="footer">
+            <div id="bottom">
+                <div id="bottom_left"></div>
+                <div id="bottom_right"></div>
+            </div><!--End bottom Div--><br style="clear:both" />
+        </div><!--End footer Div-->
+    </div><!--End header Div-->
+</div><!--End maincontainer Div-->
+</body>
+</html>

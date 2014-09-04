@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>restocordobaordering</title>
+<link href="__PUBLIC__/css/adminMain.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/south-street/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<include file="Public:bg_header" />
+            
+<div id="BodyContainer">
+  
+    
+ 
+    
+    <div style="padding-bottom:10px;text-align:center">
+      <img style="width:1085px; height:90px;" src="__PUBLIC__/Images/img_856_cat_header.jpg" border="0" />
+  </div>
+   	
+                        <include file="Public:menu_son" />
+<div id="tab_items">
+  <ul>
+    <li><a href="__APP__/Menus/index"class="">Sub Menus Listing</a></li> | 
+    <li><a href="__APP__/Menus/add_Cuisine" class="selected_red">Add Cuisine</a></li> |
+    <li><a href="__APP__/Menus/add_SubMenu" class="">Add Sub Menu</a></li>
+    <li style="list-style: none">| </li>
+    <li><a href="__APP__/Menus/add_Package" class="">Add Package</a></li> 
+    
+    </ul>
+</div>
+<br>
+<div id="main_heading">Add Cuisine</div>
+  <div class="form_outer">
+  <form name="supcatform" method="post" action="__APP__/Menus/add_Cuisine">
+  <table width="500" border="0" cellpadding="4" cellspacing="0">
+   <tr>
+  <td><strong>Cuisine Name:</strong><br />
+  
+    <input name="menu_name" type="text" id="menu_name" size="50" value="{$info['cuisine_name']}"></td>
+  </tr>
+   <tr>
+  <td><strong>Cuisine Name2:</strong><br />
+  
+    <input name="menu_name2" type="text" id="menu_name2" size="50" value="{$info['cuisine_name2']}"></td>
+  </tr>
+  <tr>
+  <td><strong>Sub Menu Ordering #:</strong><br />
+    <input name="menu_ordering" type="text" id="menu_ordering" size="50" value="{$info['ordering']}"></td>
+  </tr>
+  <tr align="left" valign="top">
+  <td><strong>Cuisine Description:</strong><br>
+                <em><font color="#666666">(To insert a new paragraph, enter &lt;P&gt;. 
+                To bold text, surround text with &lt;B&gt; and &lt;/B&gt;. To italicize text, surround text with &lt;I&gt; 
+                and &lt;/I&gt;.)</font></em><br />
+  <textarea name="menu_desc" cols="40" rows="6" id="menu_desc">{$info['remark']}</textarea></td>
+  </tr>
+  <tr>
+  <td><input type="submit" name="submit" value="Submit" />
+  
+  <input type="hidden" name="gid" id="gid"  value="{$info['id']}"/>
+  <input type="hidden" name="restaurant_id" id="restaurant_id"  value="{$restaurant_id}"/></td>
+  </tr>
+  </table>
+  </form>
+</div>
+</div>
+
+
+	
+         </div>   
+            
+        </div><!--End text_holder Div-->	
+        <div id="footer">
+            <div id="bottom">
+                <div id="bottom_left"></div>
+                <div id="bottom_right"></div>
+            </div><!--End bottom Div--><br style="clear:both" />
+        </div><!--End footer Div-->
+    </div><!--End header Div-->
+</div><!--End maincontainer Div-->
+</body>
+</html>

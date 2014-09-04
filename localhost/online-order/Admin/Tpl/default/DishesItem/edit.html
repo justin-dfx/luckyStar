@@ -1,0 +1,66 @@
+<div class="page">
+	<div class="pageContent">
+
+
+	<form method="post" action="__URL__/update/navTabId/__MODULE__" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+		<input type="hidden" name="user_id" value="<?php echo $_SESSION[C('USER_AUTH_KEY')] ?>"/>
+		<input type="hidden" name="id" value="{$vo.id}" />
+		<div class="pageFormContent" layoutH="58">
+		
+<!-- 
+<div class="unit">
+	<label>重置密码：</label>
+	<input type="text" name="resetPwd" > <INPUT type="button" value="重置密码" onclick="resetPwd()" class="submit" style="height:25px">
+</div>
+-->
+
+<div class="unit">
+	<label>ItemName：</label>
+	<input type="text" class="required"   name="item_name" value="{$vo.item_name}">
+</div>
+
+<div class="unit">
+	<label>Price：</label>
+	<input type="text" class="required number" name="add_price" value="{$vo.add_price}">
+</div>
+
+<if condition='$vo["p_id"] neq "0"'>
+ 		 <div class="unit">
+				<label>ParentItem：</label>
+				<select name="p_id" onchange="loadDishes(this.value);">
+               	 <option value="0">无上级</option> 
+                <volist name='item_list' id='v'>
+               		<option value="{$v['id']}" <if condition='$v["id"] eq $vo["p_id"]'>selected="selected" </if> >{$v['item_name']}</option> 
+               	</volist>
+               </select>
+			</div>
+			<div class="unit" id="BelongDishes">
+				<label>BelongDishes：</label>
+				<select name="dishes_id">
+                <volist name='dishes_list' id='vol'>
+                <if condition='$vol["id"] eq $vo["dishes_id"]'>
+               		<option value="{$vol['id']}">{$vol['dishes_name']}</option> 
+                 </if>
+               	</volist>
+               </select>
+			</div>
+            </if>
+			<div class="unit">
+				<label>Type：</label>
+                <input type="radio" name="type" value="0" <if condition="$vo['type'] eq '0'">checked="checked"</if> />单选
+				<input type="radio" name="type" value="1" <if condition="$vo['type'] eq '1'">checked="checked"</if> />多选
+			</div>
+
+
+
+</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">Submit</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">Cancel</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+	</div>
+</div>

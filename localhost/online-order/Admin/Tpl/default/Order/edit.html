@@ -1,0 +1,56 @@
+<div class="page">
+	<div class="pageContent">
+
+
+	<form method="post" action="__URL__/update/navTabId/__MODULE__" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+		<input type="hidden" name="user_id" value="<?php echo $_SESSION[C('USER_AUTH_KEY')] ?>"/>
+		<input type="hidden" name="id" value="{$vo.id}" />
+		<div class="pageFormContent" layoutH="58">
+		
+<!-- 
+<div class="unit">
+	<label>重置密码：</label>
+	<input type="text" name="resetPwd" > <INPUT type="button" value="重置密码" onclick="resetPwd()" class="submit" style="height:25px">
+</div>
+-->
+
+<div class="unit">
+	<label>Username：</label>
+	<input type="text" class="required email"   name="account" value="{$vo.account}">
+</div>
+
+<div class="unit">
+	<label>Name：</label>
+	<input type="text" class="required" name="name" value="{$vo.name}">
+</div>
+<div class="unit">
+	<label>Phone：</label>
+	<input type="text" class="required phone" name="phone" value="{$vo.phone}">
+</div>
+<div class="unit">
+	<label>Address：</label>
+	<input type="text" class="required" name="address" value="{$vo.address}">
+</div>
+
+
+<div class="unit">
+	<label>状态：</label>
+	<select class="small bLeft"  name="status">
+		<option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+		<option <eq name="vo.status" value="0" >selected</eq> value="0">禁用</option>
+	</select>
+</div>
+
+
+
+</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">Submit</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">Cancel</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+	</div>
+</div>

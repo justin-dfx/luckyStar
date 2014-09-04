@@ -1,0 +1,56 @@
+<div class="page">
+	<div class="pageContent">
+
+
+	<form method="post" action="__URL__/update/navTabId/__MODULE__" class="pageForm required-validate" onsubmit="return iframeCallback(this, dialogAjaxDone)" enctype="multipart/form-data">
+		<input type="hidden" name="user_id" value="<?php echo $_SESSION[C('USER_AUTH_KEY')] ?>"/>
+		<input type="hidden" name="id" value="{$vo.id}" />
+		<div class="pageFormContent" layoutH="58">
+		
+<!-- 
+<div class="unit">
+	<label>重置密码：</label>
+	<input type="text" name="resetPwd" > <INPUT type="button" value="重置密码" onclick="resetPwd()" class="submit" style="height:25px">
+</div>
+-->
+
+
+ <div class="unit">
+				<label>Status：</label>
+				<select name="status">
+               		<option value="1" <if condition='$vo.status eq "1"'>selected="selected"</if>>显示</option> 
+                    <option value="0" <if condition='$vo.status eq "0"'>selected="selected"</if>>隐藏</option> 
+               </select>
+			</div>
+<div class="unit">
+				<label>Star：</label>
+				<select name="star">
+               		<option value="1" <if condition='$vo.star eq "1"'>selected="selected"</if>>1星</option> 
+                    <option value="2" <if condition='$vo.star eq "2"'>selected="selected"</if>>2星</option>
+                     <option value="3" <if condition='$vo.star eq "3"'>selected="selected"</if>>3星</option>
+                      <option value="4" <if condition='$vo.star eq "4"'>selected="selected"</if>>4星</option>
+                       <option value="5" <if condition='$vo.star eq "5"'>selected="selected"</if>>5星</option> 
+               </select>
+			</div>
+<div class="unit">
+	<label>Title：</label>
+    <input type="text" name="title" value="{$vo.title}" />
+	
+</div>
+<div class="unit">
+	<label>Content：</label>
+    <textarea name="content" style="width:300px;height:100px;">{$vo.content}</textarea>
+	
+</div>
+
+</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">Submit</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">Cancel</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+	</div>
+</div>

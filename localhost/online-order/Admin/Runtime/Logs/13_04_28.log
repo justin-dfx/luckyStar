@@ -1,0 +1,2 @@
+[ 2013-04-28T16:58:52+08:00 ] ERR: (ThinkException) XML标签语法错误 : condition="$vo.status eq '1'">已确认<else
+[ 2013-04-28T16:59:09+08:00 ] ERR: (ThinkException) XML标签语法错误 : condition="$vo.status eq '1'">已确认<else

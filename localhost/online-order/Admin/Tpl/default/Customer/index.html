@@ -1,0 +1,94 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>easywayordering</title>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="js/Togle.js"></script>
+<link href="__PUBLIC__/css/adminMain.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__css/south-street/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
+
+
+<!-- GOOGLE API KEY FOR DREAM HOST:  AIzaSyCkRkSd4hQornJOYjYMoHqi3-Wv4hVOOgg-->
+<!-- GOOGLE API KEY FOR LOCAL PROJECT:  ABQIAAAAPpaOjFQ_miNP74G3g3O7oBTTwBGlz0OqYPu6tmNrU0ToxRrT5hQhlPr8PLUNIxb0D5FrOa5lJ1tp6w-->
+<!-- <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBT2sOPbIDLELZVjk6vPcGs87xqabq2jcs&sensor=false" type="text/javascript"></script> -->
+<!--<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyBT2sOPbIDLELZVjk6vPcGs87xqabq2jcs" type="text/javascript"></script> -->
+</script>
+
+
+</head>
+
+<include file="Public:bg_header"/><!--End navigation_links Div-->
+            
+
+
+<div id="BodyContainer">
+  
+    
+ 
+    
+    <div style="padding-bottom:10px;text-align:center">
+      <img style="width:1085px; height:90px;" src="__PUBLIC__/images/img_856_cat_header.jpg" border="0" />
+  </div>
+   	
+  <include file="Public:menu_son" />
+<div id="tab_items">
+	<ul>
+    	<li>
+        	<a href="?mod=customer&item=main&cid=856" class="selected_red" >View / Edit Existing Customer List</a>
+        </li>|
+    	<li>
+        	<a href="?mod=customer&item=search&cid=856" class="">Search Existing Customer</a>
+       </li>
+    </ul>
+</div>
+
+<div id="contents">
+<div id="main_heading">EXISTING REGISTER CUSTOMERS LIST </div>
+<div class="form_outer" >
+<table width="100%" border="0" cellspacing="1" class="listig_table">
+  <tr>
+    
+    <th width="113"><strong>First Name</strong></th>
+    <th width="113"><strong>Last Name</strong></th>
+    <th width="175"><strong>Email</strong></th>
+    <th width="119"><strong>Phone No.</strong></th>
+    <th width="99"><strong>Zip Code</strong></th>
+    <th width="132"><strong>Address</strong></th> 
+    <th width="119"><strong>City</strong></th>
+    <th width="119"><strong>State</strong></th>
+    <th width="119"><strong>Edit Info</strong></th>
+  </tr>
+  <volist name="list" id="vo">
+  <tr>
+    <td>{$vo.first_name}</td>
+    <td>{$vo.last_name}</td>
+    <td>{$vo.email}</td>
+    <td>{$vo.mobile}</td>
+    <td>{$vo.zip_code}</td>
+    <td>{$vo.address}</td>
+    <td>{$vo.city}</td>
+    <td>{$vo.status}</td>
+
+  </tr>
+  </volist>
+</table>
+</div>
+ </div>	
+         </div>   
+            
+        </div><!--End text_holder Div-->	
+        <div id="footer">
+            <div id="bottom">
+                <div id="bottom_left"></div>
+                <div id="bottom_right"></div>
+            </div><!--End bottom Div--><br style="clear:both" />
+        </div><!--End footer Div-->
+    </div><!--End header Div-->
+</div><!--End maincontainer Div-->
+</body>
+</html>

@@ -1,0 +1,2 @@
+[ 2012-06-13T13:18:29+08:00 ] ERR: (ThinkException) Access denied for user 'root'@'localhost' (using password: YES)
+[ 2012-06-13T16:28:17+08:00 ] ERR: (ThinkException) Action:succes您所请求的方法不存在！

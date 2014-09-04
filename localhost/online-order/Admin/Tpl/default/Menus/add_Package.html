@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>restocordobaordering</title>
+
+<link href="__PUBLIC__/css/adminMain.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/south-street/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#addgroupbox").hide();
+  $("#add_group").click(function(){
+    $("#form1").submit();  
+  });
+});
+</script>
+</head>
+
+<include file="Public:bg_header" /><!--End navigation_links Div-->
+             
+ <div id="BodyContainer">
+  
+    
+ 
+    
+    <div style="padding-bottom:10px;text-align:center">
+      <img style="width:1085px; height:90px;" src="__PUBLIC__/Images/img_856_cat_header.jpg" border="0" />
+  </div>
+   	
+   <include file="Public:menu_son" />
+                        <div id="tab_items">
+                            <ul>
+                                <li>
+                                    <a href="?mod=menus&amp;catid=856" class="">Sub Menus Listing</a>
+                                </li>
+                                <li style="list-style: none">|
+                                </li>
+                                <li>
+                                    <a href="__APP__/Menus/add_Cuisine" class="">Add Cuisine</a>
+                                </li>
+                                <li style="list-style: none">|
+                                </li>
+                                <li>
+                                    <a href="__APP__/Menus/add_SubMenu" class="">Add Sub Menu</a>
+                                </li>
+                                <li style="list-style: none">|
+                                </li>
+                                <li>
+                                    <a href="__APP__/Menus/add_Package" class="selected_red">Add Package</a>
+                                </li>
+                            </ul>
+                        </div><br>
+
+
+
+
+
+<div id="main_heading">Add Package</div>
+
+<div class="form_outer">
+  <form name="form1" method="post" action="__APP__/Menus/add_Package"  >
+    <table width="100%" border="0" cellpadding="4" cellspacing="0">
+      <tr align="left" valign="top">
+        <td width="172"><strong>Package From:</strong></td>
+        <td width="973">
+        <select name="cuisine_name" type="text" id="cuisine_name" style="width:" >
+          <option value="0">=====Select Cuisine=====</option>
+        <foreach name="CuisineList" item="vo">
+          <option value="{$vo.id}" <if condition="$info['cuisine_id'] eq $vo['id']">selected="selected"</if>>{$vo.cuisine_name}</option>
+        </foreach>
+        </select>
+        </td>
+      </tr>
+      <tr align="left" valign="top">
+        <td width="172"><strong>Package Name:</strong></td>
+        <td width="973"><input name="group_name" type="text" size="40" id="coupon_title" value="{$info.group_name}"></td>
+      </tr>
+      <tr align="left" valign="top">
+        <td><strong>Package Name2:</strong></td>
+        <td><input name="group_name2" maxlength="11" type="text" size="40" id="coupon_code" value="{$info.group_name2}"></td>
+      </tr>
+      <tr align="left" valign="top">
+        <td width="172"><strong>Package Price:</strong></td>
+        <td><input name="price" type="text" size="40" id="min_order_total" value="{$info.price}"></td>
+      </tr>
+      <tr align="left" valign="top">
+        <td><strong>Package Type:</strong></td>
+        <td><input type="radio" name="group_type" id="discount_in" value="0" <if condition="$info['group_type'] eq 0">checked="checked"</if> />
+          Choose&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="group_type" id="discount_in" value="1"<if condition="$info['group_type'] eq 1">checked="checked"</if> />
+          Pick</td>
+      </tr>     
+
+      <tr align="left" valign="top">
+        <td>&nbsp;</td>
+
+        <td>
+        <if condition="empty($info)">
+        <input type="submit" name="submit" id="add_group" value="Add Group">
+        <else />
+        <input type="submit" name="submit" id="add_group" value="Edit">
+        <input type="submit" name="submit" id="add_group" value="Add Group">
+        </if>
+            <input type="hidden" name="gid" value="{$info.id}"></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<!-- <div class="addgroupbox" id="addgroupbox">
+  <div id="AdminLeftConlum">
+    <form name="frmedit" id="frmedit" action="" method="post" enctype="multipart/form-data">
+        <table width="100%" border="0" cellpadding="4" cellspacing="0">
+            <tbody>
+              <tr align="left" valign="top">
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" name="submit" id="submit" value="Add Option">
+                    <input type="button" name="btnSave" value="从其他modifier中选择" onclick="showLocation();">
+                </td>
+            </tr>
+              <tr align="left" valign="top">
+                <td width="76">&nbsp;</td>
+                <td width="1052"><strong>You selected item(click name edit):</strong><br>
+                    <textarea name="catname" cols="35" id="itemname" >薄饼普通饼=1.00厚饼=2.00</textarea>
+                    <p>每个attribute为一行，如果加价，在后面加上=1.00等。</p>
+                  </td>
+              </tr>              
+              <tr align="left" valign="top"> 
+                <td width="76"></td>
+                <td><strong>Option Name:</strong><br>
+                    <input name="Option Name" type="text" size="40" value="Choose a kind of soup" id="Option Name"> </td>
+              </tr>         
+           
+            <tr align="left" valign="top"> 
+                <td></td>
+                <td><strong>Option Name2:</strong><br>
+                   <input name="Option Name2" type="text" size="40" value="选择一种饼" id="Option Name2">
+                </td>
+            </tr>
+             <tr align="left" valign="top"> 
+                <td></td>
+                <td><strong>Option type:</strong><br>
+                   <input  type="radio"  name="Option type" id="" value="Radio" />Radio
+                   <input  type="checkbox"  name="Option type" id="" value="Checkbox" />Checkbox
+                </td>
+            </tr>
+
+             <tr align="left" valign="top"> 
+                <td></td>
+                <td><strong>If you select the check box:</strong><br><strong>Max Select</strong><br>
+                   <input name="" type="text" size="40" value="4" id="Option Name2">
+
+                </td>
+            </tr>
+         
+            <tr align="left" valign="top">
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" name="submit" id="submit" value="complete">
+                    <input type="button" name="btnSave" value="Save and Continue" onclick="showLocation();">
+                </td>
+            </tr>
+        </tbody>
+      </table>
+    </form>
+</div> -->
+<!-- <div id="addgroupConlum">
+  <h1>Alert window 为用户之前添加果断attribute，可选择option过滤。</h1>
+  <select name="option" id="option" style="width:270px;" class="valid">
+    <option value="-1">option1</option>
+    <option value="167">option2</option>
+    <option value="168">option3</option>
+    <option value="169">option4</option>
+    <option value="170">option5</option>
+    <option value="171" selected="">option6</option>
+    <option value="172">option7</option>                    
+  </select>
+  <form class="addform">
+    <table width="100%" border="0" cellpadding="3" cellspacing="0">
+      <tbody>
+        <tr align="left" valign="top"> 
+          <td width="33.3333%"><input  type="checkbox"  name="Option type" id="" value="Checkbox" />薄饼</td>
+          <td width="33.3333%"><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item1</td>
+          <td width="33.3333%"><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item2</td>
+        </tr>
+        <tr align="left" valign="top"> 
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />普通饼=1.00</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item3</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item4</td>
+        </tr>
+        <tr align="left" valign="top"> 
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />厚饼=2.00</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item5</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item6</td>
+        </tr>
+        <tr align="left" valign="top"> 
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />普通饼=1.00</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item3</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item4</td>
+        </tr>
+        <tr align="left" valign="top"> 
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />厚饼=2.00</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item5</td>
+          <td><input  type="checkbox"  name="Option type" id="" value="Checkbox" />item6</td>
+        </tr> 
+        <tr align="left" valign="top" class="addgroupbtn">
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" name="submit" id="submit" value="cancel">
+                    <input type="button" name="btnSave" value="Select All" onclick="showLocation();">
+                </td>
+            </tr>
+      </tbody>
+    </table> 
+  </form> -->
+    
+</div>
+<br class="clearfloat">
+</div>
+
+
+
+ </div>	
+</div>   
+</div><!--End text_holder Div-->	
+        <div id="footer">
+            <div id="bottom">
+                <div id="bottom_left"></div>
+                <div id="bottom_right"></div>
+            </div><!--End bottom Div--><br style="clear:both" />
+        </div><!--End footer Div-->
+    </div><!--End header Div-->
+</div><!--End maincontainer Div-->
+</body>
+</html>

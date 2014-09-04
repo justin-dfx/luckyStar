@@ -1,0 +1,16 @@
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [2048] Declaration of IndexAction::index() should be compatible with that of CommonAction::index() IndexAction.class.php 第 2 行.
+[ 2013-04-25T17:02:24+08:00 ] SQL: SHOW COLUMNS FROM bk_bizi_admin_log [ RunTime:0.004814s ]
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [8] Undefined variable: fields Db.class.php 第 722 行.
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed Db.class.php 第 722 行.
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [8] Undefined variable: values Db.class.php 第 722 行.
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [2] implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed Db.class.php 第 722 行.
+[ 2013-04-25T17:02:24+08:00 ] SQL: INSERT INTO `bk_bizi_admin_log` () VALUES () [ RunTime:0.000508s ]
+[ 2013-04-25T17:02:24+08:00 ] SQL: SHOW COLUMNS FROM bk_node [ RunTime:0.003789s ]
+[ 2013-04-25T17:02:24+08:00 ] SQL: SELECT name,title,group_id FROM `bk_node` WHERE ( `level` = 2 ) AND ( `status` = 1 ) AND ( `pid` = 1 ) ORDER BY sort DESC [ RunTime:0.000702s ]
+[ 2013-04-25T17:02:24+08:00 ] SQL: SHOW COLUMNS FROM bk_group [ RunTime:0.003877s ]
+[ 2013-04-25T17:02:24+08:00 ] SQL: SELECT id,name,title,parent_id FROM `bk_group` WHERE ( `status` = 1 ) ORDER BY parent_id,sort DESC [ RunTime:0.000401s ]
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 21 行.
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [8] Undefined index: _ACCESS_LIST IndexAction.class.php 第 25 行.
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [8] Undefined variable: group_list IndexAction.class.php 第 35 行.
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() IndexAction.class.php 第 35 行.
+[ 2013-04-25T17:02:24+08:00 ] NOTIC: [8] Undefined index: rel 8036b6ce8dcda916f02254a7b19498b1.php 第 102 行.

@@ -1,0 +1,1 @@
+[ 2013-05-10T18:11:17+08:00 ] ERR: (ThinkException) XML标签语法错误 : condition='$vo['status'] eq "1"'

@@ -1,0 +1,98 @@
+<form id="pagerForm" action="__URL__" method="post">
+	<input type="hidden" name="pageNum" value="1"/>
+	<input type="hidden" name="account" value="{$_REQUEST.account}"/>
+</form>
+
+<div class="page">
+	<div class="pageHeader">
+		<form onsubmit="return navTabSearch(this);" action="__URL__" method="post">
+		<input type="hidden" name="pageNum" value="1"/>
+		<div class="searchBar">
+			<ul class="searchContent">
+				<li>
+					<label>订单号：</label>
+					<input type="text" name="order_sn" value=""/>
+				</li>
+			</ul>
+			<div class="subBar">
+				<ul>
+					<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div></div></li>
+				</ul>
+			</div>
+		</div>
+		</form>
+	</div>
+	
+	<div class="pageContent">
+		<div class="panelBar">
+			<ul class="toolBar">
+				<!--<li><a class="add" href="__URL__/add" target="dialog" mask="true"><span>新增</span></a></li>
+                 
+				<li><a class="edit" href="__URL__/edit/id/{sid_member}" target="dialog" mask="true" warn="请选择订单"><span>编辑</span></a></li>
+				<li class="line">line</li>-->
+                <li><a class="delete" href="__URL__/foreverdelete/navTabId/__MODULE__" posttype="string" rel="id" target="selectedTodo" title="确实要删除这些订单吗?"><span>批量删除</span></a></li>
+				<li><a class="delete" href="__URL__/foreverdelete/id/{sid_member}/navTabId/__MODULE__" target="navTabTodo" title="你确定要删除吗？" warn="请选择订单"><span>删除</span></a></li>
+				
+			</ul>
+		</div>
+<div  layouth="116">
+		<table class="list" width="100%" >
+			<thead>
+			<tr>
+            <th width="18" class="left"><div title="" class="gridCol">
+            <input type="checkbox" class="checkboxCtrl" group="id"></div></th>
+				<th width="60">编号</th>
+				<th>订单号</th>
+                <th>订单类型</th>
+                <th>收货人(预约人)</th>
+				<th>下单时间</th>
+				<th>订餐会员</th>
+                <th>餐馆</th>
+				<th>状态</th>
+                <th>操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			<volist id="vo" name="list">
+				<tr target="sid_member" rel="{$vo['id']}">
+                <td class="left"><div><input type="checkbox" value="{$vo['id']}" name="id"></div></td>
+					<td>{$vo['id']}</td>
+					<td>{$vo['order_sn']}</td>
+                    <td><if condition='$vo.reservation_time eq "0"'>订餐(<if condition='$vo.type eq "1"'>外送<elseif condition='$vo.type eq 2'/>自取<else/>堂吃</if>)<else />订位</if></td>
+                    <td>{$vo['consignee']}[TEL:{$vo['tel']}]<br>{$vo['address']}</td>
+					<td>{$vo['create_time']|date="Y-m-d H:i:s",###}</td>
+					<td>{:W('ShowMember',array(id=>$vo['member_id']))}</td>
+                    <td>{:W('ShowRestaurant',array('id'=>$vo['restaurant_id']))}</td>
+					<td><if condition="$vo.status eq '1'">已下单
+                    <elseif condition="$vo.status eq '2'"/>已下单，已配送
+                    <elseif condition="$vo.status eq '3'"/>已下单，已配送，已完成
+                    <else />已取消</if></td>
+                    <td>
+                   <a target="navTabTodo" href="__URL__/changeStatus/id/{$vo['id']}" callback>
+                   	<if condition='$vo["status"] eq "1" && $vo["type"] eq "1"'>配送
+                    <elseif condition='$vo["status"] eq "2"'/>完成	
+                    </if>
+                   </a>
+                    <if condition="$vo.status neq '0' || $vo.status neq '3'"><a target="navTabTodo" href="__URL__/cancel/id/{$vo['id']}" callback>取消</a></if>
+                    <if condition='$vo["type"] eq "0" || $vo["type"] eq "2" || $vo["type"] eq "3"'>
+                    	<a target="navTab" href="__URL__/view/id/{$vo['id']}">查看</a>
+                    <else />
+                    	<a target="dialog" mask="true" href="__URL__/res_view/id/{$vo['id']}">查看</a>
+                    </if>
+                    </td>
+				</tr>
+			</volist>
+			</tbody>
+		</table>
+</div>
+		<div class="panelBar">
+			<div class="pages">
+				<span>共{$totalCount}条</span>
+			</div>
+			<div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}"></div>
+		</div>
+
+	</div>
+	
+</div>
+

@@ -1,0 +1,96 @@
+<style type="text/css">
+	.page{margin-bottom:20px;}
+	.page table{margin:10px auto;}
+	.page table tr td{padding:5px 0px;}
+	.title{font-weight:bold;text-align:right;}
+	.info .left{padding-right:30px;}
+	.menu_title{font-weight:bold;text-align:left;}
+</style>
+<volist name='list' id='vo'>
+<div class="pageHeader" style="text-align:center;">订单基本信息</div>
+<div class="page">
+
+	<table>
+    	<tr>
+        	<td class="title" width="10%">订单号：</td>
+            <td class="info left" width="40%">{$vo['order_sn']}</td>
+            <td  class="title" width="10%">下单会员：</td>
+            <td  class="info" width="40%">{:W('ShowMember',array(id=>$vo['member_id']))}</td>
+        </tr>
+        <tr>
+        	<td class="title" width="10%">餐馆：</td>
+            <td class="info left" width="40%">{:W('ShowRestaurant',array('id'=>$vo['restaurant_id']))}</td>
+            <td  class="title" width="10%">下单时间：</td>
+            <td  class="info" width="40%">{$vo['create_time']|date="Y-m-d H:i:s",###}</td>
+        </tr>
+        <tr>
+        	<td class="title" width="10%">配送时间：</td>
+            <td class="info left" width="40%"><if condition='$vo.delivery_time eq "0"'>暂未配送<else/>{$vo['delivery_time']|date="Y-m-d H:i:s",###}</if></td>
+            <td  class="title" width="10%">完成时间：</td>
+            <td  class="info" width="40%"><if condition='$vo.complete_time eq "0"'>暂未完成<else/>{$vo['complete_time']|date="Y-m-d H:i:s",###}</if></td>
+        </tr>
+         <tr>
+        	<td class="title" width="10%">取消时间：</td>
+            <td class="info left" width="40%"><if condition='$vo.cancel_time eq "0"'>未取消<else/>{$vo['cancel_time']|date="Y-m-d H:i:s",###}</if></td>
+           <td class="title" width="10%">支付方式：</td>
+            <td class="info" width="40%"><if condition="$vo.status eq '1'">现金支付<elseif condition="$vo.status eq '2'"/>信用卡支付<else />贝宝支付</if></td>
+        </tr>
+        <tr>
+        	
+            <td class="title" width="10%">订单状态：</td>
+            <td class="info" width="40%">
+            		<if condition="$vo.status eq '1'">已下单
+                    <elseif condition="$vo.status eq '2'"/>已下单，已配送
+                    <elseif condition="$vo.status eq '3'"/>已下单，已配送，已完成
+                    <else />已取消</if>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<div class="pageHeader" style="text-align:center;">收货人信息</div>
+<div class="page">
+	<table>
+    	<tr>
+        	<td class="title" width="10%">收货人：</td>
+            <td class="info" width="40%">{$vo['consignee']}</td>
+            <td  class="title" width="10%">收货地址：</td>
+            <td  class="info" width="40%">{$vo['address']}</td>
+        </tr>
+           <tr>
+        	<td class="title" width="10%">联系电话：</td>
+            <td class="info" width="40%">{$vo['tel']}</td>
+            <td  class="title" width="10%">邮箱：</td>
+            <td  class="info" width="40%">{$vo['email']}</td>
+        </tr>
+    </table>
+</div>
+</volist>
+<div class="pageHeader" style="text-align:center;">菜单信息</div>
+<div class="page">
+	<table>
+    	<tr>
+        	<td class="menu_title" width="10%">菜品</td>
+            <td class="menu_title" width="30%">口味及增加项目</td>
+           
+            <td class="menu_title" width="10%">数量</td>
+             <td class="menu_title" width="30%">特别说明</td>
+            <td class="menu_title" width="10%">小计</td>
+        </tr>
+        <volist name='menu_list' id='vol'>
+        <tr>
+        	<td>{$vol['dishesname']}({$vol['price']})</td>
+            <td>{$vol['item']}</td>
+            <td>{$vol['quantity']}</td>
+            <td>{$vol['remark']}</td>
+             <td>${$vol['total_price']}</td>
+        </tr>
+         </volist>
+         <volist name='list' id='v'>
+         <tr>
+         	<td style="font-weight:bold;text-align:right;" colspan="4">合计：</td>
+            <td>${$v['total_money']}</td>
+         </tr>
+         </volist>
+    </table>
+</div>

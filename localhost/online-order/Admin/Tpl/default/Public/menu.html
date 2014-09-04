@@ -1,0 +1,27 @@
+<div class="accordion" fillSpace="sidebar">
+    <volist name="menu" id="group">
+        <notempty name="group['node']">
+            <div class="accordionHeader">
+                <h2><span>Folder</span>{$group['title']}</h2>
+            </div>
+            <div class="accordionContent">
+                <ul class="tree treeFolder">
+                    <volist name="group['node']" id="nodes">
+                        <notempty name="nodes['node']">
+                            <li><a href="javascript:;">{$nodes[title]}</a>
+                                <ul>
+                                    <volist name="nodes['node']" id="node">
+                                        <li><a href="{:U($node['name'].'/index')}" target="navTab" rel="{$node['name']}">{$node[title]}</a></li>
+                                    </volist>
+                                </ul>
+                            </li>
+                        </notempty>
+                        <empty name="nodes['node']">
+                            <li><a href="{:U($nodes['name'].'/index')}" target="navTab" rel="{$nodes['name']}">{$nodes[title]}</a></li>
+                        </empty>
+                    </volist>
+                </ul>
+            </div>
+        </notempty>
+    </volist>
+</div>

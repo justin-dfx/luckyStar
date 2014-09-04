@@ -1,0 +1,26 @@
+<?php
+return array (
+  0 => 'id',
+  1 => 'account',
+  2 => 'password',
+  3 => 'name',
+  4 => 'phone',
+  5 => 'nickname',
+  6 => 'tel',
+  7 => 'resfax',
+  8 => 'zip',
+  9 => 'address',
+  10 => 'opening_hours',
+  11 => 'logo',
+  12 => 'create_time',
+  13 => 'update_time',
+  14 => 'last_login_time',
+  15 => 'last_login_ip',
+  16 => 'status',
+  17 => 'login_count',
+  18 => 'business_status',
+  19 => 'remark',
+  '_autoinc' => true,
+  '_pk' => 'id',
+);
+?>

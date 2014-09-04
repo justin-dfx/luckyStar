@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>restocordobaordering</title>
+
+
+<link href="css/adminMain.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body  onLoad="initialize();">
+<div id="maincontainer">
+	<div id="header">
+        <div id="top">
+            <div id="top_left"></div>
+            <div id="top_right"></div>
+        </div><!--End top Div-->
+    </div><!--End header Div-->        
+    <div id="text_holder">
+        <div id="logo_area">
+            <div id="logo"><img src="images/man_img.png" width="57" height="74" /></div>
+            <div id="logo_text">ADMINISTRATION PANEL</div>
+            <div id="login_text"><strong>Welcome</strong>&nbsp;&nbsp;Store Owner, Chang J Wu&nbsp;&nbsp;|&nbsp;&nbsp;<a href="logout.php">Log out</a></div>
+	        <br style="clear:both" />
+        </div>                <!--End logo_area Div-->
+        <div id="page_content">
+            <div id="navigation_links">
+                <div id="navigation">
+			        <div class="links not"><a href="resturant.html" >Restaurants (2)</a></div>
+			        <div class="links not"><a href="changepass.html" >Change Password</a></div>
+                    <div class="links not"><a href="apikey.html" >API Key</a></div>  		  
+			        <br style="clear:both" />
+		        </div>
+                <!--End navigation Div-->
+            </div><!--End navigation_links Div-->
+            <div id="contents">
+            	<div style="padding-bottom:10px;text-align:center">
+            		<img style="width:1085px; height:90px;" src="images/img_856_cat_header.jpg" border="0" />
+            	</div>
+            	<div id="navigation_links">
+            		<div id="navigation">
+            			<div class="links"><a href="restocordoba.html" >Restaurant</a></div>
+            			<div class="links "><a href="order.html" class="">Orders(1)</a></div>
+   	        			<div class="links "><a href="?mod=customer" class="">Customers(0)</a></div>
+            			<div class="links "><a href="?mod=coupon" class="">Coupons</a></div>
+            			<div class="links "><a href="?mod=menus"class="">Menus</a></div>
+            			<div class="links "><a href="?mod=mailing_list"class="">Mailing List</a></div>
+            			<div class="links selected"><a href="analytics.html"class="">Analytics</a></div>
+                	    <br style="clear:both" />
+                    </div>
+                </div>
+	            <div id="main_heading" class="clearfix">
+		            <span style="font-size:18px; display: block; float: left;"> Orders Analytics</span>
+		            <span style="display: block; float: right; padding-right: 20px;">March 28, 2014 - May 26, 2014		</span>
+	            </div>
+	            <div style="float:left; width:20%;">
+	            	<div style="width:240px;">    
+                        <div id="" class="searchlist_analytics">
+                            <ul>
+		                        <li><a href="?mod=analytics&item=orders">Orders</a></li>
+		                        <li><a href="?mod=analytics&item=abandoned_carts">Abandoned Carts</a></li>
+		                        <li><a href="?mod=analytics&item=traffic">Traffic</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>	
+                <div id="contents_area" style="float:left; margin-left:15px; width:78%;">
+                	<table>
+			<tr>
+				<td>
+					<table cellpadding="10px" id="analytics" cellspacing="0">
+						<thead>
+							<tr>
+								<th colspan="3">Order's source statistics</th>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td class="title">Orders</td>
+								<td class="title">Total Amount</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="title">Website orders</td>
+								<td>1</td>
+								<td>$12.93</td>
+							</tr>
+							<tr>
+								<td class="title">Mobile Website Orders</td>
+								<td>0</td>
+								<td>$0</td>
+							</tr>
+							<tr>
+								<td class="title">Rapid re-orders</td>
+								<td>0</td>
+								<td>$0</td>
+							</tr>
+							<tr>
+								<td class="title">Facebook Orders</td>
+								<td>0</td>
+								<td>$0</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td>
+					<table cellpadding="10px" id="analytics" cellspacing="0">
+						<thead>
+							<tr>
+								<th colspan="3">Guests, New and Repeat Customers</th>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td class="title">Orders</td>
+								<td class="title">Total Amount</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="title">Guests</td>
+								<td>1</td>
+								<td>$12.93</td>
+							</tr>
+							<tr>
+								<td class="title">New Customers</td>
+								<td>0</td>
+								<td>$0</td>
+							</tr>
+							<tr>
+								<td class="title">Repeat Customer</td>
+								<td>0</td>
+								<td>$0</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td>
+					<table cellpadding="10px" id="analytics" cellspacing="0">
+						<thead>
+							<tr>
+								<th colspan="3">Pickup vs Delivery</th>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td class="title">Orders</td>
+								<td class="title">Total Amount</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="title">Pickup</td>
+								<td>1</td>
+								<td>$12.93</td>
+							</tr>
+							<tr>
+								<td class="title">Delivery</td>
+								<td>0</td>
+								<td>$0</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<table cellpadding="10px" id="analytics" cellspacing="0">
+						<thead>
+							<tr>
+								<th colspan="3">Cash vs Credit card</th>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td class="title">Orders</td>
+								<td class="title">Total Amount</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="title">Cash</td>
+								<td>1</td>
+								<td>$12.93</td>
+							</tr>
+							<tr>
+								<td class="title">Credit card</td>
+								<td>0</td>
+								<td>$0</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="clearfix" style="margin-bottom: 15px;"></div>
+	</div>
+	<div style="clear: both;"></div>
+</div>
+<!--End body Div-->	
+         </div>   
+            
+        </div><!--End text_holder Div-->	
+        <div id="footer">
+            <div id="bottom">
+                <div id="bottom_left"></div>
+                <div id="bottom_right"></div>
+            </div><!--End bottom Div--><br style="clear:both" />
+        </div><!--End footer Div-->
+    </div><!--End header Div-->
+</div><!--End maincontainer Div-->
+</body>
+</html>

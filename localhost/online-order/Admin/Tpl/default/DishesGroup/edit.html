@@ -1,0 +1,60 @@
+<div class="page">
+	<div class="pageContent">
+
+
+	<form method="post" action="__URL__/update/navTabId/__MODULE__" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+		<input type="hidden" name="user_id" value="<?php echo $_SESSION[C('USER_AUTH_KEY')] ?>"/>
+		<input type="hidden" name="id" value="{$vo.id}" />
+		<div class="pageFormContent" layoutH="58">
+		
+<!-- 
+<div class="unit">
+	<label>重置密码：</label>
+	<input type="text" name="resetPwd" > <INPUT type="button" value="重置密码" onclick="resetPwd()" class="submit" style="height:25px">
+</div>
+-->
+
+<div class="unit">
+	<label>GroupName：</label>
+	<input type="text" class="required"   name="group_name" value="{$vo.group_name}">
+</div>
+<div class="unit">
+	<label>ChineseName：</label>
+	<input type="text" class="required"   name="cn_name" value="{$vo.cn_name}">
+</div>
+<div class="unit">
+	<label>Sequence：</label>
+	<input type="text" class="required number" name="sort" size="5" value="{$vo.sort}">
+</div>
+
+<div class="unit">
+				<label>Restaurant：</label>
+				<select name="restaurant_id">
+                <volist name='rs_list' id='v'>
+               		<option value="{$v['id']}"  <if condition='$v["id"] eq $vo["restaurant_id"]'>selected="selected"</if> >{$v['nickname']}</option> 
+               	</volist>
+               </select>
+			</div>
+
+<div class="unit">
+	<label>状态：</label>
+	<select class="small bLeft"  name="status">
+		<option <eq name="vo.status" value="1" >selected</eq> value="1">显示</option>
+		<option <eq name="vo.status" value="0" >selected</eq> value="0">隐藏</option>
+	</select>
+</div>
+
+
+
+
+</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">Submit</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">Cancel</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+	</div>
+</div>

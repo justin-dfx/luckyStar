@@ -1,0 +1,95 @@
+<form id="pagerForm" action="__URL__" method="post">
+			<input type="hidden" name="medium" value="{$_REQUEST.medium}"/>
+            <input type="hidden" name="pageNum" value="{$_REQUEST.pageNum}"/>
+            <input type="hidden" name="numPerPage" value="{$_REQUEST.numPerPage}" />
+            <input type="hidden" name="orderField" value="{$_REQUEST.orderField}" />
+            <input type="hidden" name="orderDirection" value="{$_REQUEST.orderDirection}" />
+</form>
+
+<div class="page">
+	<div class="pageHeader">
+		<form onsubmit="return navTabSearch(this);" action="__URL__" method="post">
+        	<input type="hidden" name="pid" value="{$_REQUEST['pid']}" />
+		<div class="searchBar">
+			<ul class="searchContent">
+				<li>
+					<label>名称：</label>
+					<input type="text" name="word" class="medium" value="{$_REQUEST['word']}" >
+				</li>
+                <li>
+                <label>分组:</label>
+                <select name="group_id">
+	                <option <eq name="_REQUEST['group_id']" value="-1" >selected</eq> value="-1">所有</option>
+	                <option <eq name="_REQUEST['group_id']" value="0" >selected</eq> value="0">未分组</option>
+                <volist name="groupList" id ="vo">
+                    <option <eq name="_REQUEST['group_id']" value="$key" >selected</eq> value="{$key}">{$vo}</option>
+                </volist>
+
+                </select>                
+                </li>
+                <li><label>状态：</label>
+                    <select name="status">
+                        <option <eq name="_REQUEST['status']" value="-1" >selected</eq> value="-1">所有</option>
+                        <option <eq name="_REQUEST['status']" value="1" >selected</eq> value="1">可用</option>
+                        <option <eq name="_REQUEST['status']" value="0" >selected</eq> value="0">隐藏</option>
+                    </select>
+                </li>
+			</ul>
+			<div class="subBar">
+				<ul>
+					<li><div class="buttonActive"><div class="buttonContent"><button type="submit">查询</button></div></div></li>
+				</ul>
+			</div>
+		</div>
+		</form>
+	</div>
+	
+	<div class="pageContent">
+		<div class="panelBar">
+			<ul class="toolBar">
+				<li><a class="add" href="__URL__/add/pid/{$_REQUEST['pid']}/level/{$_REQUEST['level']}" target="dialog" mask="true"><span>新增</span></a></li>
+				<li><a class="delete" href="__URL__/foreverdelete/id/{sid_node}/navTabId/__MODULE__" target="navTabTodo" calback="navTabAjaxMenu" title="你确定要删除吗？" warn="请选择节点"><span>删除</span></a></li>
+				<li><a class="edit" href="__URL__/edit/id/{sid_node}" target="dialog" mask="true" warn="请选择节点"><span>修改</span></a></li>
+			</ul>
+		</div>
+
+<div  layouth="116">
+		<table class="list" width="100%" >
+			<thead>
+			<tr>
+				<th width="60" {:orderField('id')}>编号</th>
+				<th width="100" {:orderField('name')}>名称</th>
+				<th {:orderField('title')}>显示名</th>
+				<th width="100" {:orderField('group_id')}>分组</th>
+				<th width="80" {:orderField('sort')}>排序</th>
+				<th width="80" {:orderField('level')}>level</th>                
+				<th width="100" {:orderField('status')}>状态</th>
+				<th width="100" >操作</th>
+			</tr>
+			</thead>
+			<tbody>
+			<volist id="vo" name="list">
+				<tr target="sid_node" rel="{$vo['id']}">
+					<td>{$vo['id']}</td>
+					<td><a href="__URL__/index/pid/{$vo['id']}/level/{$vo['level']+1}" target="navTab" rel="__MODULE__">{$vo['name']}</a></td>
+					<td>
+<span onclick="listTable.edit(this, '__URL__/setField/field/title/', {$vo.id})">{$vo['title']|default="无标题"}</span>
+                    </td>
+					<td>{$vo['group_id']|getNodeGroupName}</td>
+					<td><span onclick="listTable.edit(this, '__URL__/setField/field/sort/', {$vo.id})">{$vo['sort']|default="无"}</span></td>
+					<td><span onclick="listTable.edit(this, '__URL__/setField/field/level/', {$vo.id})">{$vo['level']|default="无"}</span></td>
+					<td><img src="/Public/Images/<if condition="$vo.status eq '1'">yes<else/>no</if>.gif" onclick="listTable.toggle(this, '__URL__/setField/field/status/', {$vo.id})" /></td>
+					<td><a href="__URL__/edit/id/{$vo['id']}" target="dialog" mask="true"><span>编辑</span></a></td>
+				</tr>
+			</volist>
+			</tbody>
+		</table>
+</div>
+		<div class="panelBar">
+			<div class="pages">
+				<span>共{$totalCount}条</span>
+			</div>
+			<div class="pagination" targetType="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}"></div>
+		</div>
+	</div>
+</div>

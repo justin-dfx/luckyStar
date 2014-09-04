@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>apikey</title>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="js/Togle.js"></script>
+<link href="css/adminMain.css" rel="stylesheet" type="text/css" />
+<link href="css/south-street/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
+
+
+<!-- GOOGLE API KEY FOR DREAM HOST:  AIzaSyCkRkSd4hQornJOYjYMoHqi3-Wv4hVOOgg-->
+<!-- GOOGLE API KEY FOR LOCAL PROJECT:  ABQIAAAAPpaOjFQ_miNP74G3g3O7oBTTwBGlz0OqYPu6tmNrU0ToxRrT5hQhlPr8PLUNIxb0D5FrOa5lJ1tp6w-->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyBT2sOPbIDLELZVjk6vPcGs87xqabq2jcs&sensor=false" type="text/javascript"></script>
+<!--<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyBT2sOPbIDLELZVjk6vPcGs87xqabq2jcs" type="text/javascript"></script> -->
+</script>
+<script type="text/javascript" language="javascript">
+	function initialize() {
+		geocoder = new google.maps.Geocoder();
+	}
+</script>
+
+</head>
+
+<body  onLoad="initialize();">
+<div id="maincontainer">
+	<div id="header">
+        <div id="top">
+            <div id="top_left"></div>
+            <div id="top_right"></div>
+        </div><!--End top Div-->
+    </div><!--End header Div-->        
+    <div id="text_holder">
+        <div id="logo_area">
+            <div id="logo"><img src="images/man_img.png" width="57" height="74" /></div>
+            <div id="logo_text">ADMINISTRATION PANEL</div>
+            <div id="login_text"><strong>Welcome</strong>&nbsp;&nbsp;Store Owner, Chang J Wu&nbsp;&nbsp;|&nbsp;&nbsp;<a href="logout.php">Log out</a></div>
+	        <br style="clear:both" />
+        </div>                <!--End logo_area Div-->
+        <div id="page_content">
+            <div id="navigation_links">
+                <div id="navigation">
+                    <div class="links not"><a href="index.html" >Restaurants (2)</a></div>
+			        <div class="links not"><a href="changepass.html" >Change Password</a></div>
+                    <div class="links selected"><a href="apikey.html" >API Key</a></div>
+                    <br style="clear:both" />
+                </div>
+                <!--End navigation Div-->
+            </div><!--End navigation_links Div-->
+            <div style="margin: 50px;">
+	            <span style="font-family: Arial, Helvetica, sans-serif; color: Maroon; font-weight: bold; font-size: 20px;">
+		        Your API Key is
+	            </span>
+	            <br />
+	            <span style="font-size: 16px;">iwsazw88qs	</span>
+            </div>	
+        </div>   
+            
+    </div><!--End text_holder Div-->	
+    <div id="footer">
+        <div id="bottom">
+            <div id="bottom_left"></div>
+            <div id="bottom_right"></div>
+        </div><!--End bottom Div--><br style="clear:both" />
+    </div><!--End footer Div-->
+</div><!--End maincontainer Div-->
+</body>
+</html>

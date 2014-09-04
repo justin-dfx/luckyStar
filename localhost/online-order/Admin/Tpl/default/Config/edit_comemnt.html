@@ -1,0 +1,18 @@
+<div class="page">
+	<div class="pageContent">
+	<form method="post" action="__URL__/update_comemnt/navTabId/__MODULE__" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+		<input type="hidden" name="config_model" value="__MODULE__" />
+        <input type="hidden" name="id" value="{$vo.id}" />
+		<div class="pageFormContent" layoutH="58">
+	      {$attr_html}
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">修改</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">取消</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+	</div>
+</div>

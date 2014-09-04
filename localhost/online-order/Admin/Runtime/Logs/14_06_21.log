@@ -1,0 +1,921 @@
+[ 2014-06-21T09:57:29+08:00 ] SQL: SHOW COLUMNS FROM on_user [ RunTime:0.329873s ]
+[ 2014-06-21T09:57:29+08:00 ] SQL: SELECT * FROM `on_user` WHERE ( `account` = '2280259901@qq.com' ) AND ( `status` > 0 ) LIMIT 1  [ RunTime:0.068095s ]
+[ 2014-06-21T09:57:30+08:00 ] SQL: UPDATE `on_user` SET `last_login_time`=1403315849,`login_count`=login_count+1,`last_login_ip`='127.0.0.1' WHERE id='70' [ RunTime:0.112110s ]
+[ 2014-06-21T09:57:30+08:00 ] NOTIC: [8] Undefined index: administrator RBAC.class.php 第 92 行.
+[ 2014-06-21T09:57:30+08:00 ] SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='70' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001061s ]
+[ 2014-06-21T09:57:30+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() RBAC.class.php 第 221 行.
+[ 2014-06-21T09:57:31+08:00 ] NOTIC: [2048] Declaration of IndexAction::index() should be compatible with that of CommonAction::index() IndexAction.class.php 第 2 行.
+[ 2014-06-21T09:57:31+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005748s ]
+[ 2014-06-21T09:57:31+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.119641s ]
+[ 2014-06-21T09:57:31+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) [ RunTime:0.000808s ]
+[ 2014-06-21T09:57:31+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) LIMIT 1  [ RunTime:0.000327s ]
+[ 2014-06-21T09:57:31+08:00 ] NOTIC: [8] Undefined index: restaurant_id IndexAction.class.php 第 74 行.
+[ 2014-06-21T09:57:31+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = null ) LIMIT 1  [ RunTime:0.058644s ]
+[ 2014-06-21T09:57:31+08:00 ] NOTIC: [8] Undefined index:  8036b6ce8dcda916f02254a7b19498b1.php 第 36 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [8] Undefined index: 2c0e4c1dc493929e860d2aabb450795d RBAC.class.php 第 176 行.
+[ 2014-06-21T09:57:35+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.007795s ]
+[ 2014-06-21T09:57:35+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000652s ]
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 26 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 263 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 264 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 285 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T09:57:35+08:00 ] NOTIC: [8] Undefined index: 1b0738117196b73249c91d6d235923af RBAC.class.php 第 176 行.
+[ 2014-06-21T09:57:36+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.228509s ]
+[ 2014-06-21T09:57:36+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T09:57:36+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.248953s ]
+[ 2014-06-21T11:07:53+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:07:53+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.011698s ]
+[ 2014-06-21T11:07:53+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000733s ]
+[ 2014-06-21T11:07:53+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:07:53+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:07:53+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 299 行.
+[ 2014-06-21T11:07:53+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T11:07:53+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 321 行.
+[ 2014-06-21T11:07:55+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:07:55+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005408s ]
+[ 2014-06-21T11:07:55+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:07:55+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000514s ]
+[ 2014-06-21T11:10:14+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:10:14+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006719s ]
+[ 2014-06-21T11:10:14+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000561s ]
+[ 2014-06-21T11:10:14+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:10:14+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:10:14+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T11:10:14+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T11:10:14+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T11:10:15+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:10:15+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.011067s ]
+[ 2014-06-21T11:10:15+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:10:15+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001441s ]
+[ 2014-06-21T11:10:49+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:10:49+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006698s ]
+[ 2014-06-21T11:10:49+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001149s ]
+[ 2014-06-21T11:10:49+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:10:49+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:10:49+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 306 行.
+[ 2014-06-21T11:10:49+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:10:49+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 328 行.
+[ 2014-06-21T11:10:50+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:10:51+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004160s ]
+[ 2014-06-21T11:10:51+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:10:51+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000488s ]
+[ 2014-06-21T11:11:04+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:11:04+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006612s ]
+[ 2014-06-21T11:11:04+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001063s ]
+[ 2014-06-21T11:11:04+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:11:04+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:11:04+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:11:04+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:11:04+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:11:06+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:11:06+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.006415s ]
+[ 2014-06-21T11:11:06+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:11:06+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001074s ]
+[ 2014-06-21T11:11:09+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:11:09+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.008400s ]
+[ 2014-06-21T11:11:09+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000763s ]
+[ 2014-06-21T11:11:09+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:11:09+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:11:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:11:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:11:09+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:11:11+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:11:11+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004514s ]
+[ 2014-06-21T11:11:11+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:11:11+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000555s ]
+[ 2014-06-21T11:12:53+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:12:53+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.012026s ]
+[ 2014-06-21T11:12:53+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000584s ]
+[ 2014-06-21T11:12:53+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:12:53+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:12:53+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:12:53+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:12:53+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:12:55+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:12:55+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004547s ]
+[ 2014-06-21T11:12:55+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:12:55+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000493s ]
+[ 2014-06-21T11:13:13+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:13:13+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.009177s ]
+[ 2014-06-21T11:13:13+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000840s ]
+[ 2014-06-21T11:13:13+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:13:13+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:13:13+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:13:13+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:13:13+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:13:15+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:13:15+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004879s ]
+[ 2014-06-21T11:13:15+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:13:15+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000637s ]
+[ 2014-06-21T11:13:25+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:13:25+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.014120s ]
+[ 2014-06-21T11:13:25+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000663s ]
+[ 2014-06-21T11:13:25+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:13:25+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:13:25+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:13:25+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:13:25+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:13:27+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:13:27+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004324s ]
+[ 2014-06-21T11:13:27+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:13:27+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000786s ]
+[ 2014-06-21T11:13:45+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:13:45+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005878s ]
+[ 2014-06-21T11:13:45+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000553s ]
+[ 2014-06-21T11:13:45+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:13:45+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:13:45+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:13:45+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:13:45+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:13:48+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:13:48+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004350s ]
+[ 2014-06-21T11:13:48+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:13:48+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000611s ]
+[ 2014-06-21T11:14:38+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:14:38+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004795s ]
+[ 2014-06-21T11:14:38+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000544s ]
+[ 2014-06-21T11:14:38+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:14:38+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:14:38+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:14:38+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:14:38+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:14:39+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:14:39+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004810s ]
+[ 2014-06-21T11:14:39+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:14:39+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000602s ]
+[ 2014-06-21T11:15:00+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:15:00+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004871s ]
+[ 2014-06-21T11:15:00+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000789s ]
+[ 2014-06-21T11:15:00+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:15:00+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:15:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:15:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:15:00+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:15:02+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:15:02+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.003857s ]
+[ 2014-06-21T11:15:02+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:15:02+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000635s ]
+[ 2014-06-21T11:15:09+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:15:09+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006100s ]
+[ 2014-06-21T11:15:09+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000608s ]
+[ 2014-06-21T11:15:09+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:15:09+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:15:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:15:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:15:09+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:15:11+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:15:11+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.003925s ]
+[ 2014-06-21T11:15:11+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:15:11+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000556s ]
+[ 2014-06-21T11:15:15+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:15:15+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.007415s ]
+[ 2014-06-21T11:15:15+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000845s ]
+[ 2014-06-21T11:15:15+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:15:15+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:15:15+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:15:15+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:15:15+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:15:16+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:15:16+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004757s ]
+[ 2014-06-21T11:15:16+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:15:16+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.015166s ]
+[ 2014-06-21T11:16:13+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:16:13+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.007528s ]
+[ 2014-06-21T11:16:13+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001290s ]
+[ 2014-06-21T11:16:13+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:16:13+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:16:13+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:16:13+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:16:13+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:16:15+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:16:15+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.012913s ]
+[ 2014-06-21T11:16:15+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:16:15+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000534s ]
+[ 2014-06-21T11:16:28+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:16:28+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006883s ]
+[ 2014-06-21T11:16:28+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000714s ]
+[ 2014-06-21T11:16:28+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:16:28+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:16:28+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:16:28+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:16:28+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:16:30+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:16:30+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.003935s ]
+[ 2014-06-21T11:16:30+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:16:30+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000452s ]
+[ 2014-06-21T11:18:37+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:18:37+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006902s ]
+[ 2014-06-21T11:18:37+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001160s ]
+[ 2014-06-21T11:18:37+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:18:37+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 63 行.
+[ 2014-06-21T11:18:37+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:18:37+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 309 行.
+[ 2014-06-21T11:18:37+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 330 行.
+[ 2014-06-21T11:18:39+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:18:39+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.006235s ]
+[ 2014-06-21T11:18:39+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:18:39+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000538s ]
+[ 2014-06-21T11:19:21+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:19:21+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005459s ]
+[ 2014-06-21T11:19:21+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000639s ]
+[ 2014-06-21T11:19:21+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:19:21+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 63 行.
+[ 2014-06-21T11:19:21+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:19:21+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 309 行.
+[ 2014-06-21T11:19:21+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 330 行.
+[ 2014-06-21T11:19:23+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:19:23+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005660s ]
+[ 2014-06-21T11:19:23+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:19:23+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001908s ]
+[ 2014-06-21T11:20:02+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:20:02+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005872s ]
+[ 2014-06-21T11:20:02+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000997s ]
+[ 2014-06-21T11:20:02+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:20:02+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 63 行.
+[ 2014-06-21T11:20:02+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:20:02+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 309 行.
+[ 2014-06-21T11:20:02+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 330 行.
+[ 2014-06-21T11:20:04+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:20:04+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.015797s ]
+[ 2014-06-21T11:20:04+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:20:04+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.044149s ]
+[ 2014-06-21T11:20:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:20:59+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006162s ]
+[ 2014-06-21T11:20:59+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000676s ]
+[ 2014-06-21T11:20:59+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:20:59+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 63 行.
+[ 2014-06-21T11:20:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:20:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 309 行.
+[ 2014-06-21T11:20:59+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 330 行.
+[ 2014-06-21T11:21:01+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:21:01+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004276s ]
+[ 2014-06-21T11:21:01+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:21:01+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000515s ]
+[ 2014-06-21T11:22:03+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:22:03+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004807s ]
+[ 2014-06-21T11:22:03+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000658s ]
+[ 2014-06-21T11:22:03+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:22:03+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 63 行.
+[ 2014-06-21T11:22:03+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:22:03+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 309 行.
+[ 2014-06-21T11:22:03+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 330 行.
+[ 2014-06-21T11:22:04+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:22:04+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.003787s ]
+[ 2014-06-21T11:22:04+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:22:04+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000434s ]
+[ 2014-06-21T11:26:11+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:26:11+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004632s ]
+[ 2014-06-21T11:26:11+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000541s ]
+[ 2014-06-21T11:26:11+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:26:11+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 61 行.
+[ 2014-06-21T11:26:11+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 306 行.
+[ 2014-06-21T11:26:11+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:26:11+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 328 行.
+[ 2014-06-21T11:26:13+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:26:13+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004538s ]
+[ 2014-06-21T11:26:13+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:26:13+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000495s ]
+[ 2014-06-21T11:26:44+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:26:44+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006564s ]
+[ 2014-06-21T11:26:44+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001469s ]
+[ 2014-06-21T11:26:44+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:26:44+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:26:44+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:26:44+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:26:44+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:26:46+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:26:46+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004130s ]
+[ 2014-06-21T11:26:46+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:26:46+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.002784s ]
+[ 2014-06-21T11:30:45+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:30:45+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004624s ]
+[ 2014-06-21T11:30:45+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000546s ]
+[ 2014-06-21T11:30:45+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:30:45+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 62 行.
+[ 2014-06-21T11:30:45+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 307 行.
+[ 2014-06-21T11:30:45+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 308 行.
+[ 2014-06-21T11:30:45+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 329 行.
+[ 2014-06-21T11:30:46+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:30:46+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004502s ]
+[ 2014-06-21T11:30:46+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:30:46+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000605s ]
+[ 2014-06-21T11:31:48+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:31:48+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005814s ]
+[ 2014-06-21T11:31:48+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001038s ]
+[ 2014-06-21T11:31:48+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:31:48+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 26 行.
+[ 2014-06-21T11:31:48+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 263 行.
+[ 2014-06-21T11:31:48+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 264 行.
+[ 2014-06-21T11:31:48+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 285 行.
+[ 2014-06-21T11:31:49+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:31:49+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004005s ]
+[ 2014-06-21T11:31:49+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:31:49+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000656s ]
+[ 2014-06-21T11:31:50+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:31:50+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.010884s ]
+[ 2014-06-21T11:31:50+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000944s ]
+[ 2014-06-21T11:31:50+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T11:31:50+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 26 行.
+[ 2014-06-21T11:31:50+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 263 行.
+[ 2014-06-21T11:31:50+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 264 行.
+[ 2014-06-21T11:31:50+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 285 行.
+[ 2014-06-21T11:31:51+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T11:31:51+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.013768s ]
+[ 2014-06-21T11:31:51+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T11:31:51+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.016735s ]
+[ 2014-06-21T13:32:43+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:32:43+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005995s ]
+[ 2014-06-21T13:32:43+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000603s ]
+[ 2014-06-21T13:32:43+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:32:43+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:32:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:32:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:32:43+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:32:45+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:32:45+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.003756s ]
+[ 2014-06-21T13:32:45+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:32:45+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000435s ]
+[ 2014-06-21T13:32:57+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:32:57+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004162s ]
+[ 2014-06-21T13:32:57+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000595s ]
+[ 2014-06-21T13:32:57+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:32:57+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:32:57+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:32:57+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:32:57+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:32:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:32:59+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.040909s ]
+[ 2014-06-21T13:32:59+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:32:59+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000542s ]
+[ 2014-06-21T13:33:23+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:23+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005919s ]
+[ 2014-06-21T13:33:23+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000700s ]
+[ 2014-06-21T13:33:23+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:33:23+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:33:23+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:33:23+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:33:23+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:33:25+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:25+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005861s ]
+[ 2014-06-21T13:33:25+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:33:25+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000738s ]
+[ 2014-06-21T13:33:32+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:32+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004878s ]
+[ 2014-06-21T13:33:32+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000804s ]
+[ 2014-06-21T13:33:32+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:33:32+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:33:32+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:33:32+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:33:32+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:33:33+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:33+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.030041s ]
+[ 2014-06-21T13:33:33+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:33:33+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000931s ]
+[ 2014-06-21T13:33:38+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:38+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005406s ]
+[ 2014-06-21T13:33:38+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.002779s ]
+[ 2014-06-21T13:33:38+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:33:38+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:33:38+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:33:38+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:33:38+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:33:40+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:40+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005034s ]
+[ 2014-06-21T13:33:40+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:33:40+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.020465s ]
+[ 2014-06-21T13:33:58+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:58+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.012047s ]
+[ 2014-06-21T13:33:58+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000670s ]
+[ 2014-06-21T13:33:58+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:33:58+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:33:58+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:33:58+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:33:58+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:33:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:33:59+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004043s ]
+[ 2014-06-21T13:33:59+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:33:59+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000551s ]
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:38:59+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.008041s ]
+[ 2014-06-21T13:38:59+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000772s ]
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [8] Undefined index: lng 02e46478ffea1bfab27c1bde59ca83ef.php 第 212 行.
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [8] Undefined index: lat 02e46478ffea1bfab27c1bde59ca83ef.php 第 214 行.
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:38:59+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:39:02+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:39:02+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004014s ]
+[ 2014-06-21T13:39:02+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:39:02+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.004697s ]
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:39:36+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004767s ]
+[ 2014-06-21T13:39:36+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000866s ]
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [8] Undefined index: lng 02e46478ffea1bfab27c1bde59ca83ef.php 第 212 行.
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [8] Undefined index: lat 02e46478ffea1bfab27c1bde59ca83ef.php 第 214 行.
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:39:36+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:39:37+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:39:37+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004788s ]
+[ 2014-06-21T13:39:37+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:39:37+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000753s ]
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:39:56+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006183s ]
+[ 2014-06-21T13:39:56+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000845s ]
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [8] Undefined index: lng 02e46478ffea1bfab27c1bde59ca83ef.php 第 213 行.
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [8] Undefined index: lat 02e46478ffea1bfab27c1bde59ca83ef.php 第 215 行.
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 302 行.
+[ 2014-06-21T13:39:56+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 323 行.
+[ 2014-06-21T13:39:58+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:39:58+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.008932s ]
+[ 2014-06-21T13:39:58+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:39:58+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.011786s ]
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:40:27+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005289s ]
+[ 2014-06-21T13:40:27+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001646s ]
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [8] Undefined index: lng 02e46478ffea1bfab27c1bde59ca83ef.php 第 212 行.
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [8] Undefined index: lat 02e46478ffea1bfab27c1bde59ca83ef.php 第 214 行.
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 300 行.
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:40:27+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 322 行.
+[ 2014-06-21T13:40:29+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:40:29+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005786s ]
+[ 2014-06-21T13:40:29+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:40:29+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000798s ]
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:41:43+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.010449s ]
+[ 2014-06-21T13:41:43+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000708s ]
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [8] Undefined index: lng 02e46478ffea1bfab27c1bde59ca83ef.php 第 213 行.
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [8] Undefined index: lat 02e46478ffea1bfab27c1bde59ca83ef.php 第 215 行.
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 302 行.
+[ 2014-06-21T13:41:43+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 323 行.
+[ 2014-06-21T13:41:45+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:41:45+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.007082s ]
+[ 2014-06-21T13:41:45+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:41:45+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001747s ]
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:42:14+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005071s ]
+[ 2014-06-21T13:42:14+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000640s ]
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [8] Undefined index: lng 02e46478ffea1bfab27c1bde59ca83ef.php 第 213 行.
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [8] Undefined index: lat 02e46478ffea1bfab27c1bde59ca83ef.php 第 215 行.
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 301 行.
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 302 行.
+[ 2014-06-21T13:42:14+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 323 行.
+[ 2014-06-21T13:42:15+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:42:15+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004205s ]
+[ 2014-06-21T13:42:15+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:42:15+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.025793s ]
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:42:27+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006926s ]
+[ 2014-06-21T13:42:27+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000672s ]
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [8] Undefined index: lng 02e46478ffea1bfab27c1bde59ca83ef.php 第 214 行.
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [8] Undefined index: lat 02e46478ffea1bfab27c1bde59ca83ef.php 第 216 行.
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 302 行.
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 303 行.
+[ 2014-06-21T13:42:27+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 324 行.
+[ 2014-06-21T13:42:29+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:42:29+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.003763s ]
+[ 2014-06-21T13:42:29+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:42:29+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000615s ]
+[ 2014-06-21T13:44:49+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:44:49+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006302s ]
+[ 2014-06-21T13:44:49+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000594s ]
+[ 2014-06-21T13:44:49+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:44:49+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:44:49+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 302 行.
+[ 2014-06-21T13:44:49+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 303 行.
+[ 2014-06-21T13:44:49+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 324 行.
+[ 2014-06-21T13:44:51+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:44:51+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004508s ]
+[ 2014-06-21T13:44:51+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 147 行.
+[ 2014-06-21T13:44:51+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001483s ]
+[ 2014-06-21T13:45:55+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:45:55+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.012690s ]
+[ 2014-06-21T13:45:55+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000778s ]
+[ 2014-06-21T13:45:55+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:45:55+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:45:55+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 302 行.
+[ 2014-06-21T13:45:55+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 303 行.
+[ 2014-06-21T13:45:55+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 324 行.
+[ 2014-06-21T13:45:57+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:45:57+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.010466s ]
+[ 2014-06-21T13:45:57+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:45:57+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000921s ]
+[ 2014-06-21T13:46:43+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:46:43+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.015912s ]
+[ 2014-06-21T13:46:43+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.006653s ]
+[ 2014-06-21T13:46:43+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:46:43+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 55 行.
+[ 2014-06-21T13:46:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 302 行.
+[ 2014-06-21T13:46:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 303 行.
+[ 2014-06-21T13:46:43+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 324 行.
+[ 2014-06-21T13:46:45+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:46:45+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.056893s ]
+[ 2014-06-21T13:46:45+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:46:45+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001312s ]
+[ 2014-06-21T13:47:32+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:47:32+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.014360s ]
+[ 2014-06-21T13:47:32+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000911s ]
+[ 2014-06-21T13:47:32+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:47:33+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T13:47:33+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T13:47:33+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T13:47:33+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T13:47:34+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:47:34+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004518s ]
+[ 2014-06-21T13:47:34+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:47:34+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000556s ]
+[ 2014-06-21T13:47:42+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:47:42+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005762s ]
+[ 2014-06-21T13:47:42+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000572s ]
+[ 2014-06-21T13:47:42+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:47:42+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T13:47:42+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T13:47:42+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T13:47:42+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T13:47:44+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:47:44+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004030s ]
+[ 2014-06-21T13:47:44+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:47:44+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000672s ]
+[ 2014-06-21T13:49:03+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:49:03+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.010149s ]
+[ 2014-06-21T13:49:03+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000839s ]
+[ 2014-06-21T13:49:03+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:49:03+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T13:49:03+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T13:49:03+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T13:49:03+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T13:49:05+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:49:05+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004035s ]
+[ 2014-06-21T13:49:05+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:49:05+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000487s ]
+[ 2014-06-21T13:49:09+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:49:09+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.007759s ]
+[ 2014-06-21T13:49:09+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000693s ]
+[ 2014-06-21T13:49:09+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:49:09+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T13:49:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T13:49:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T13:49:09+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T13:49:11+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:49:11+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.008361s ]
+[ 2014-06-21T13:49:11+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:49:11+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.007798s ]
+[ 2014-06-21T13:50:10+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:50:10+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.012323s ]
+[ 2014-06-21T13:50:10+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001051s ]
+[ 2014-06-21T13:50:10+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:50:10+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T13:50:10+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T13:50:10+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T13:50:10+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T13:50:11+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:50:11+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005058s ]
+[ 2014-06-21T13:50:11+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:50:11+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001008s ]
+[ 2014-06-21T13:54:46+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:54:46+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005342s ]
+[ 2014-06-21T13:54:46+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000546s ]
+[ 2014-06-21T13:54:46+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T13:54:46+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T13:54:46+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T13:54:46+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T13:54:46+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T13:54:47+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T13:54:47+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.006228s ]
+[ 2014-06-21T13:54:47+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T13:54:47+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000712s ]
+[ 2014-06-21T14:10:35+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:10:35+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004741s ]
+[ 2014-06-21T14:10:35+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000652s ]
+[ 2014-06-21T14:10:35+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:10:35+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T14:10:35+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:10:35+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T14:10:35+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T14:10:37+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:10:37+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.008888s ]
+[ 2014-06-21T14:10:37+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:10:37+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000573s ]
+[ 2014-06-21T14:10:56+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:10:56+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006486s ]
+[ 2014-06-21T14:10:56+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000580s ]
+[ 2014-06-21T14:10:56+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:10:56+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T14:10:56+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:10:56+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T14:10:56+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T14:10:58+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:10:58+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005090s ]
+[ 2014-06-21T14:10:58+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:10:58+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000567s ]
+[ 2014-06-21T14:11:25+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:11:25+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.008082s ]
+[ 2014-06-21T14:11:25+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001396s ]
+[ 2014-06-21T14:11:25+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:11:25+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T14:11:25+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:11:25+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T14:11:25+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T14:11:27+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:11:27+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.006331s ]
+[ 2014-06-21T14:11:27+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:11:27+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000706s ]
+[ 2014-06-21T14:11:36+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:11:36+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.009115s ]
+[ 2014-06-21T14:11:36+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001028s ]
+[ 2014-06-21T14:11:36+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:11:36+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T14:11:36+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:11:36+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T14:11:36+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T14:11:37+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:11:38+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004008s ]
+[ 2014-06-21T14:11:38+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:11:38+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000630s ]
+[ 2014-06-21T14:11:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:11:59+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005439s ]
+[ 2014-06-21T14:11:59+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000746s ]
+[ 2014-06-21T14:11:59+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:11:59+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T14:11:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:11:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T14:11:59+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T14:12:00+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:12:00+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.005487s ]
+[ 2014-06-21T14:12:00+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:12:00+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001005s ]
+[ 2014-06-21T14:12:56+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:12:56+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005960s ]
+[ 2014-06-21T14:12:56+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000599s ]
+[ 2014-06-21T14:12:56+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:12:56+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T14:12:56+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:12:56+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T14:12:56+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T14:12:58+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:12:58+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.006592s ]
+[ 2014-06-21T14:12:58+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:12:58+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000693s ]
+[ 2014-06-21T14:24:13+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:24:13+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.015448s ]
+[ 2014-06-21T14:24:13+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.002199s ]
+[ 2014-06-21T14:24:13+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:24:13+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 42 行.
+[ 2014-06-21T14:24:13+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 289 行.
+[ 2014-06-21T14:24:13+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 290 行.
+[ 2014-06-21T14:24:13+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 311 行.
+[ 2014-06-21T14:24:17+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:24:17+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004280s ]
+[ 2014-06-21T14:24:17+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:24:17+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000630s ]
+[ 2014-06-21T14:24:34+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:24:34+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005921s ]
+[ 2014-06-21T14:24:34+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000730s ]
+[ 2014-06-21T14:24:34+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:24:34+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 44 行.
+[ 2014-06-21T14:24:34+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:24:34+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 292 行.
+[ 2014-06-21T14:24:34+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 313 行.
+[ 2014-06-21T14:24:36+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:24:36+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004318s ]
+[ 2014-06-21T14:24:36+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:24:36+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.031488s ]
+[ 2014-06-21T14:58:38+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:58:38+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.018658s ]
+[ 2014-06-21T14:58:38+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000832s ]
+[ 2014-06-21T14:58:38+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:58:38+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 28 行.
+[ 2014-06-21T14:58:38+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 275 行.
+[ 2014-06-21T14:58:38+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 276 行.
+[ 2014-06-21T14:58:38+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 297 行.
+[ 2014-06-21T14:58:40+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:58:40+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.006851s ]
+[ 2014-06-21T14:58:40+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:58:40+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000530s ]
+[ 2014-06-21T14:59:22+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:59:22+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.008635s ]
+[ 2014-06-21T14:59:22+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000727s ]
+[ 2014-06-21T14:59:22+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T14:59:22+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T14:59:22+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 290 行.
+[ 2014-06-21T14:59:22+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T14:59:22+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 312 行.
+[ 2014-06-21T14:59:24+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T14:59:24+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004622s ]
+[ 2014-06-21T14:59:24+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T14:59:24+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000495s ]
+[ 2014-06-21T15:00:06+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:00:06+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.009351s ]
+[ 2014-06-21T15:00:06+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000568s ]
+[ 2014-06-21T15:00:06+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:00:06+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:00:06+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 290 行.
+[ 2014-06-21T15:00:06+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T15:00:06+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 312 行.
+[ 2014-06-21T15:00:08+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:00:08+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.031051s ]
+[ 2014-06-21T15:00:08+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:00:08+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000860s ]
+[ 2014-06-21T15:01:55+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:01:55+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005054s ]
+[ 2014-06-21T15:01:55+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001898s ]
+[ 2014-06-21T15:01:55+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:01:55+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:01:55+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 290 行.
+[ 2014-06-21T15:01:55+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T15:01:55+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 312 行.
+[ 2014-06-21T15:01:57+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:01:57+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.006634s ]
+[ 2014-06-21T15:01:57+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:01:57+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000844s ]
+[ 2014-06-21T15:04:14+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:04:14+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.007529s ]
+[ 2014-06-21T15:04:14+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001105s ]
+[ 2014-06-21T15:04:14+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:04:14+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:04:14+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 290 行.
+[ 2014-06-21T15:04:14+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T15:04:14+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 312 行.
+[ 2014-06-21T15:04:16+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:04:16+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.018900s ]
+[ 2014-06-21T15:04:16+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:04:16+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000843s ]
+[ 2014-06-21T15:04:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:04:59+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004500s ]
+[ 2014-06-21T15:04:59+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000633s ]
+[ 2014-06-21T15:04:59+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:04:59+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:04:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 290 行.
+[ 2014-06-21T15:04:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 291 行.
+[ 2014-06-21T15:04:59+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 312 行.
+[ 2014-06-21T15:05:01+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:05:01+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004482s ]
+[ 2014-06-21T15:05:01+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:05:01+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000428s ]
+[ 2014-06-21T15:11:40+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:11:40+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004753s ]
+[ 2014-06-21T15:11:40+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000616s ]
+[ 2014-06-21T15:11:40+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:11:40+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:11:40+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T15:11:40+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T15:11:40+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T15:11:43+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:11:43+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004421s ]
+[ 2014-06-21T15:11:43+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:11:43+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000522s ]
+[ 2014-06-21T15:11:58+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:11:58+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004476s ]
+[ 2014-06-21T15:11:58+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000660s ]
+[ 2014-06-21T15:11:58+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:11:58+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:11:58+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T15:11:58+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T15:11:58+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T15:12:00+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:00+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004888s ]
+[ 2014-06-21T15:12:00+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:12:00+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000751s ]
+[ 2014-06-21T15:12:03+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:03+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.007179s ]
+[ 2014-06-21T15:12:03+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000761s ]
+[ 2014-06-21T15:12:03+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:12:03+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:12:03+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T15:12:03+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T15:12:03+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T15:12:05+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:05+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004267s ]
+[ 2014-06-21T15:12:05+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:12:05+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000437s ]
+[ 2014-06-21T15:12:15+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:15+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004513s ]
+[ 2014-06-21T15:12:15+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000662s ]
+[ 2014-06-21T15:12:15+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:12:15+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:12:15+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T15:12:15+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T15:12:15+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T15:12:17+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:17+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.009295s ]
+[ 2014-06-21T15:12:17+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:12:17+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.001310s ]
+[ 2014-06-21T15:12:23+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:23+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005226s ]
+[ 2014-06-21T15:12:23+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000922s ]
+[ 2014-06-21T15:12:23+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:12:23+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:12:23+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T15:12:23+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T15:12:23+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T15:12:25+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:25+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.014005s ]
+[ 2014-06-21T15:12:25+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:12:25+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000716s ]
+[ 2014-06-21T15:12:34+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:34+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004777s ]
+[ 2014-06-21T15:12:34+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000996s ]
+[ 2014-06-21T15:12:34+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T15:12:34+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T15:12:34+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T15:12:34+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T15:12:34+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T15:12:35+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:35+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.004486s ]
+[ 2014-06-21T15:12:35+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T15:12:35+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000572s ]
+[ 2014-06-21T15:12:53+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T15:12:53+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.011095s ]
+[ 2014-06-21T15:12:53+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000896s ]
+[ 2014-06-21T15:12:53+08:00 ] NOTIC: [8] Undefined index: announcements_status RestaurantDetailsAction.class.php 第 117 行.
+[ 2014-06-21T15:12:53+08:00 ] SQL: UPDATE `on_restaurant_member` SET `email`='2280259901@qq.com',`nickname`='Mr.D Chinese Food                                                     ',`phone`='13845674567',`resfax`='4008208820',`zip`='150000',`address`='388 Atlantic Ave.',`remark`='            123                                                                    ',`city`='New york',`state`='USA',`lng`='-73.98556719999999',`lat`='40.6869514',`delivery_radius`='5',`order_minimum`='50.00',`tax`='5.5',`delivery_charges`='2.00',`announcements`='123123123123',`business_status`='1',`keywords`='             123                                               ',`update_time`=1403334773,`logo`='/Public/Uploads/Logo/20140610/539688e228cbc.jpg' WHERE ( `id` = '1' ) [ RunTime:0.018939s ]
+[ 2014-06-21T15:12:54+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with that of CommonAction::index() MenusAction.class.php 第 3 行.
+[ 2014-06-21T15:12:54+08:00 ] NOTIC: [8] Undefined index: 04ef2f8116b04eb7cf65e9bf179e7d58 RBAC.class.php 第 176 行.
+[ 2014-06-21T15:12:54+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.083690s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.105337s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.039724s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.009058s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.110993s ]
+[ 2014-06-21T15:12:54+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.044519s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.002979s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000776s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.012312s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000561s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000465s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000514s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.025763s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000483s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000352s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000362s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '4' ) [ RunTime:0.000332s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '3' ) [ RunTime:0.000328s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '2' ) [ RunTime:0.000372s ]
+[ 2014-06-21T15:12:54+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '1' ) [ RunTime:0.000486s ]
+[ 2014-06-21T15:12:54+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-06-21T15:12:54+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-06-21T15:12:54+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-06-21T23:38:57+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T23:38:57+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.355015s ]
+[ 2014-06-21T23:38:58+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.011340s ]
+[ 2014-06-21T23:38:58+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T23:38:58+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T23:38:58+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T23:38:58+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T23:38:58+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T23:38:59+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.078024s ]
+[ 2014-06-21T23:38:59+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000823s ]
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T23:38:59+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004694s ]
+[ 2014-06-21T23:38:59+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000694s ]
+[ 2014-06-21T23:38:59+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T23:39:00+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004621s ]
+[ 2014-06-21T23:39:00+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000653s ]
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T23:39:00+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.004643s ]
+[ 2014-06-21T23:39:00+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001678s ]
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-06-21T23:39:00+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-06-21T23:42:01+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-06-21T23:42:01+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.122313s ]
+[ 2014-06-21T23:42:01+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-06-21T23:42:01+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.064181s ]

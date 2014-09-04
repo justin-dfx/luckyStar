@@ -1,0 +1,2 @@
+[ 2012-11-15T15:21:26+08:00 ] ERR: (ThinkException) Host 'localhost.wallba.com' is not allowed to connect to this MySQL server
+[ 2012-11-15T15:22:00+08:00 ] ERR: (ThinkException) Host 'localhost.wallba.com' is not allowed to connect to this MySQL server

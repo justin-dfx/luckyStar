@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>restocordobaordering</title>
+
+<script type="text/javascript" src="js/Togle.js"></script>
+<link href="css/adminMain.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body  onLoad="initialize();">
+<div id="maincontainer">
+	<div id="header">
+            <div id="top">
+                <div id="top_left"></div>
+                <div id="top_right"></div>
+            </div><!--End top Div-->
+    </div><!--End header Div-->        
+            <div id="text_holder">
+                
+                <div id="logo_area">
+    <div id="logo"><img src="images/man_img.png" width="57" height="74" /></div>
+    <div id="logo_text">ADMINISTRATION PANEL</div>
+            	 <div id="login_text"><strong>Welcome</strong>&nbsp;&nbsp;Store Owner, Chang J Wu&nbsp;&nbsp;|&nbsp;&nbsp;<a href="logout.php">Log out</a></div>
+	    <br style="clear:both" />
+</div>                <!--End logo_area Div-->
+            
+            <div id="page_content">
+            
+   			<div id="navigation_links">
+                  		<div id="navigation">
+			 
+			<div class="links not"><a href="resturant.html" >Restaurants (2)</a></div>
+			<div class="links not"><a href="changepass.html" >Change Password</a></div>
+            <div class="links not"><a href="apikey.html" >API Key</a></div>
+            <div class="links selected"><a href="review.html" >Pending Review</a></div> 		  
+			<br style="clear:both" />
+		</div>
+
+
+                        <!--End navigation Div-->
+            </div><!--End navigation_links Div-->
+            
+<div id="tab_items">
+  <ul>
+    <li><a href="?mod=resturant&amp;item=main">Restaurants Listing</a></li>
+  </ul>
+</div>
+
+
+
+<div id="contents">  
+  <style>
+    input[type=text].alert-error,input[type=select].alert-error,input[type=password].alert-error{
+        background-color: #F99;
+        border: 1px solid #D92353;
+        border-image: initial;
+    }
+
+    .alert-error {
+        background-color:#f2dede;
+        border-color:#eed3d7;
+        color:#b94a48;
+        text-shadow:0 1px 0 rgba(255, 255, 255, 0.5);
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+        border-radius:4px;
+    }
+    div.alert-danger, div.alert-error , span.alert-error{
+        padding:8px 10px;
+        margin: 5px 0 10px 0;
+    }
+    .hidden{display:none;}
+
+    #outline {margin:20px; border:solid 10px #9FB6CD; -moz-border-radius:20px; width:512px; height:440px;}
+    #map_canvas{width:850px; height:540px;float:left;}
+    #forehead{text-align:left;font-size:150%;}
+    #novel{width:400px; margin:20px;float:right;}
+    #AdSense{margin:20px;}
+    A:hover {color: red;text-decoration: underline overline;}
+    .draggable-popup input{background-color:#ccf}
+    .draggable-popup{background-color:white; border:1px solid black}
+</style>
+
+
+<link href="css/facebox.css" media="screen" rel="stylesheet" type="text/css"/>
+
+ <div style="padding-bottom:10px;text-align:center">
+      <img style="width:1085px; height:90px;" src="images/img_856_cat_header.jpg" border="0" />
+  </div>
+
+
+<div id="main_heading">
+    <span>Edit  Review</span>
+</div>
+
+
+<form id="form1" name="form1" method="post" action="">
+  <div id="ReviewContainer"><br />
+<br />
+<br />
+<div id="TopNav" style="margin-right:">
+  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+      <td width="320" align="right" valign="middle"><strong>Old Password:</strong></td>
+      <td align="left" valign="middle"><label>
+        <input type="password" name="oldpass" id="oldpass" style="width:200px;" />
+        </label></td>
+    </tr>
+    <tr>
+      <td align="right" valign="middle"><strong>New Password:</strong></td>
+      <td align="left" valign="middle"><input type="password" name="pass" id="pass" style="width:200px;" /></td>
+    </tr>
+    <tr>
+      <td align="right" valign="middle"><strong>Confirm Password:</strong></td>
+      <td align="left" valign="middle"><input type="password" name="confirm1" id="confirm1" style="width:200px;" /></td>
+    </tr>
+     <tr>
+      <td align="right" valign="middle">&nbsp;</td>
+      <td align="left" valign="middle">
+        <label><input type="submit" name="submit" id="submit" value="Change" /></label>
+        <label><input type="submit" name="submit" id="submit" value="Delete" /></label>
+  </td>
+    </tr>
+  </table>
+</div></div>
+</form> 
+ 
+
+<br class="clearfloat" />
+</div>
+<!--End body Div-->	
+         </div>   
+            
+        </div><!--End text_holder Div-->	
+        <div id="footer">
+            <div id="bottom">
+                <div id="bottom_left"></div>
+                <div id="bottom_right"></div>
+            </div><!--End bottom Div--><br style="clear:both" />
+        </div><!--End footer Div-->
+    </div><!--End header Div-->
+</div><!--End maincontainer Div-->
+</body>
+</html>

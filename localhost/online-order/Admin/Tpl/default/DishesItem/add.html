@@ -1,0 +1,65 @@
+
+<script language="JavaScript">
+<!--
+function checkName(){
+	ThinkAjax.send('__URL__/checkAccount/','ajax=1&account='+$F('account'));
+}
+//-->
+function loadDishes(item_id){
+		var url = '__URL__/BelongDishes/item_id/'+item_id;	
+		$('#BelongDishes').html('');
+		$('#BelongDishes',$.pdialog.getCurrent()).loadUrl(url);
+}
+</script>
+
+<div class="page">
+	<div class="pageContent">
+	
+	<form method="post" action="__URL__/insert/navTabId/__MODULE__" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+		<div class="pageFormContent" layoutH="58">
+
+			<div class="unit">
+				<label>ItemName：</label>
+				<input type="text" class="required" size="30" maxlength="100" name="item_name" />
+			</div>
+			<div class="unit">
+				<label>price：</label>
+				<input type="text" name="add_price" size="30" maxlength="20" class="required number" value="0.00"/>
+			</div>
+            <div class="unit">
+				<label>ParentItem：</label>
+				<select name="p_id" onchange="loadDishes(this.value);">
+               	 <option value="0">无上级</option> 
+                <volist name='item_list' id='vo'>
+               		<option value="{$vo['id']}">{$vo['item_name']}</option> 
+               	</volist>
+               </select>
+			</div>
+			<div class="unit" id="BelongDishes">
+				<label>BelongDishes：</label>
+				<select name="dishes_id">
+                <volist name='dishes_list' id='vo'>
+               		<option value="{$vo['id']}">{$vo['dishes_name']}</option> 
+               	</volist>
+               </select>
+			</div>
+			<div class="unit">
+				<label>Type：</label>
+                <input type="radio" name="type" value="0" checked="checked"/>单选
+				<input type="radio" name="type" value="1" />多选
+			</div>
+			
+			
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">Submit</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">Cancel</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+	</div>
+</div>
+
+

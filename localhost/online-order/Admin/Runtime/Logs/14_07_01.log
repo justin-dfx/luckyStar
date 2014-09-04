@@ -1,0 +1,45 @@
+[ 2014-07-01T10:46:00+08:00 ] NOTIC: [8] Undefined index: submit CouponsAction.class.php 第 7 行.
+[ 2014-07-01T10:46:01+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T10:46:03+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T10:56:58+08:00 ] NOTIC: [8] Undefined index: submit CouponsAction.class.php 第 7 行.
+[ 2014-07-01T10:56:58+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T10:56:58+08:00 ] NOTIC: [2048] Declaration of CustomerAction::index() should be compatible with that of CommonAction::index() CustomerAction.class.php 第 2 行.
+[ 2014-07-01T10:56:58+08:00 ] SQL: SHOW COLUMNS FROM on_member [ RunTime:0.006367s ]
+[ 2014-07-01T10:56:58+08:00 ] SQL: SHOW COLUMNS FROM on_member_address [ RunTime:0.006556s ]
+[ 2014-07-01T10:56:58+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.005910s ]
+[ 2014-07-01T10:56:58+08:00 ] SQL: SELECT * FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) [ RunTime:0.005683s ]
+[ 2014-07-01T10:56:58+08:00 ] NOTIC: [8] Undefined variable: member_id CustomerAction.class.php 第 10 行.
+[ 2014-07-01T10:56:58+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member_address.* FROM `on_member_address` LEFT JOIN on_member ON on_member_address.member_id=on_member.id WHERE ( `member_id` IN ('1','1','1','1','1','') ) [ RunTime:0.060263s ]
+[ 2014-07-01T10:56:58+08:00 ] NOTIC: [8] Undefined index:  fe0b3842d05b84847dc2f3f3011b314c.php 第 38 行.
+[ 2014-07-01T10:56:58+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-07-01T11:00:43+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T11:00:45+08:00 ] NOTIC: [8] Undefined index: submit CouponsAction.class.php 第 7 行.
+[ 2014-07-01T11:00:45+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T11:01:17+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T11:01:18+08:00 ] NOTIC: [8] Undefined index: submit CouponsAction.class.php 第 7 行.
+[ 2014-07-01T11:01:18+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T14:30:23+08:00 ] SQL: SHOW COLUMNS FROM on_coupons [ RunTime:0.005362s ]
+[ 2014-07-01T14:30:23+08:00 ] SQL: INSERT INTO `on_coupons` (`title`,`code`,`min_order`,`expiry_date`,`discount_in`,`applied_on`,`discount`,`desc`,`create_time`) VALUES ('qwe','12334234345','50','1500','%','whole order','123','123',1404196223) [ RunTime:0.050185s ]
+[ 2014-07-01T14:30:23+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-07-01T14:30:28+08:00 ] SQL: SHOW COLUMNS FROM on_coupons [ RunTime:0.004251s ]
+[ 2014-07-01T14:30:28+08:00 ] NOTIC: [8] Undefined index: submit CouponsAction.class.php 第 8 行.
+[ 2014-07-01T14:30:28+08:00 ] NOTIC: [8] Undefined index:  a12ba38b1646bc58cc17827705f8f6ae.php 第 38 行.
+[ 2014-07-01T14:31:23+08:00 ] SQL: SHOW COLUMNS FROM on_coupons [ RunTime:0.007860s ]
+[ 2014-07-01T14:31:23+08:00 ] SQL: INSERT INTO `on_coupons` (`title`,`code`,`min_order`,`expiry_date`,`discount_in`,`applied_on`,`discount`,`desc`,`create_time`) VALUES ('123','123','123','0500','%','whole order','123','123',1404196283) [ RunTime:0.015633s ]
+[ 2014-07-01T14:31:23+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-07-01T14:41:40+08:00 ] SQL: SHOW COLUMNS FROM on_coupons [ RunTime:0.006001s ]
+[ 2014-07-01T14:41:40+08:00 ] SQL: SELECT * FROM `on_coupons` [ RunTime:0.000601s ]
+[ 2014-07-01T14:41:41+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-07-01T14:42:52+08:00 ] SQL: SHOW COLUMNS FROM on_coupons [ RunTime:0.005390s ]
+[ 2014-07-01T14:42:52+08:00 ] SQL: SELECT * FROM `on_coupons` [ RunTime:0.000592s ]
+[ 2014-07-01T14:42:52+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-07-01T14:42:52+08:00 ] NOTIC: [8] Undefined index: code f1a46a5ef7855276ea49878c453f441a.php 第 95 行.
+[ 2014-07-01T14:43:29+08:00 ] SQL: SHOW COLUMNS FROM on_coupons [ RunTime:0.004661s ]
+[ 2014-07-01T14:43:29+08:00 ] SQL: SELECT * FROM `on_coupons` [ RunTime:0.000515s ]
+[ 2014-07-01T14:43:29+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-07-01T14:43:48+08:00 ] SQL: SHOW COLUMNS FROM on_coupons [ RunTime:0.004406s ]
+[ 2014-07-01T14:43:48+08:00 ] SQL: SELECT * FROM `on_coupons` [ RunTime:0.000469s ]
+[ 2014-07-01T14:43:48+08:00 ] NOTIC: [8] Undefined index:  f1a46a5ef7855276ea49878c453f441a.php 第 38 行.
+[ 2014-07-01T14:43:48+08:00 ] NOTIC: [8] Undefined index: date f1a46a5ef7855276ea49878c453f441a.php 第 97 行.
+[ 2014-07-01T14:43:48+08:00 ] NOTIC: [8] Undefined index: date f1a46a5ef7855276ea49878c453f441a.php 第 97 行.
+[ 2014-07-01T14:43:48+08:00 ] NOTIC: [8] Undefined index: date f1a46a5ef7855276ea49878c453f441a.php 第 97 行.

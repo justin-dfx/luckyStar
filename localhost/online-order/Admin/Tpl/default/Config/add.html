@@ -1,0 +1,58 @@
+<div class="page">
+	<div class="pageContent">
+	<form method="post" action="__URL__/insert/navTabId/__MODULE__" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone)">
+		<input type="hidden" name="config_model" value="__MODULE__" />
+
+
+
+<div layoutH="40" style=" float:left; display:block; overflow:auto; width:200px; height:300px; border:solid 1px #CCC; line-height:21px; background:#FFF;">
+<ul class="tree treeFolder treeCheck expand" >
+	<li><a name="RegionsAll" tvalue="RegionsAll" >所有省份</a>
+		<ul>
+        	<volist name="regions" id="R">
+	            <li><a tname="province[]" tvalue="{$R['region_name']}" >{$R['region_name']}</a></li>
+            </volist>
+		</ul>
+	</li>
+</ul>
+</div>
+
+		<div class="pageFormContent" layoutH="58">
+	        <div class="unit">
+            	<label style="float:left;">方案标题：</label>
+                <input type="text" size="30" value="" class=""  name="title"/>
+            </div>
+	        <div class="unit">
+                <label>状态：</label>
+                <select class="small bLeft"  name="status">
+                    <option <eq name="vo.status" value="1" >selected</eq> value="1">启用</option>
+                    <option <eq name="vo.status" value="0" >selected</eq> value="0">禁用</option>
+                </select>
+            </div>
+	        <div class="unit">
+            	<label style="float:left;">排序：</label>
+                <input type="text" alt="50" value="50" class=""  size="5" name="sort_order" />
+            </div>
+            
+			<!--<div class="unit">
+				<label style="float:left;">渠道id：</label>
+                <div style="float:left;width:480px;">
+                <volist name="qudaolist" id="qudao">
+                    <label style="width:70px; text-align:left;"><input name="user_id[]" type="checkbox" value="{$qudao}"/>{$qudao}</label>
+                </volist>
+                </div>
+			</div>-->
+            
+{$attr_html}
+
+		</div>
+		<div class="formBar">
+			<ul>
+				<li><div class="buttonActive"><div class="buttonContent"><button type="submit">Submit</button></div></div></li>
+				<li><div class="button"><div class="buttonContent"><button type="button" class="close">Cancel</button></div></div></li>
+			</ul>
+		</div>
+	</form>
+	
+	</div>
+</div>

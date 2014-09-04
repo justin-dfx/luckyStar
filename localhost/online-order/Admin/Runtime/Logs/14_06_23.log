@@ -1,0 +1,50 @@
+[ 2014-06-23T16:06:22+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with that of CommonAction::index() MenusAction.class.php 第 3 行.
+[ 2014-06-23T16:06:22+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.005366s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.006381s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.007450s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.005816s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.028390s ]
+[ 2014-06-23T16:06:22+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000663s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000444s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.001124s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000601s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000465s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000412s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000489s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000521s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000558s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000440s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000482s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '4' ) [ RunTime:0.000366s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '3' ) [ RunTime:0.000335s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '2' ) [ RunTime:0.000345s ]
+[ 2014-06-23T16:06:22+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '1' ) [ RunTime:0.000340s ]
+[ 2014-06-23T16:06:22+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-06-23T16:06:23+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-06-23T16:06:23+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-06-23T17:17:51+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with that of CommonAction::index() MenusAction.class.php 第 3 行.
+[ 2014-06-23T17:17:51+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.004813s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.006839s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.006147s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.007271s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.006371s ]
+[ 2014-06-23T17:17:51+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000487s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000367s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000462s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000510s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000447s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000431s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000506s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.012322s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000376s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000296s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000389s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '4' ) [ RunTime:0.000451s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '3' ) [ RunTime:0.000371s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '2' ) [ RunTime:0.000302s ]
+[ 2014-06-23T17:17:51+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '1' ) [ RunTime:0.000356s ]
+[ 2014-06-23T17:17:51+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-06-23T17:17:51+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-06-23T17:17:51+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.

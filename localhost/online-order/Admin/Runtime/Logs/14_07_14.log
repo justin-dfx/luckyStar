@@ -1,0 +1,28 @@
+[ 2014-07-14T21:41:57+08:00 ] SQL: SHOW COLUMNS FROM on_user [ RunTime:0.132584s ]
+[ 2014-07-14T21:41:57+08:00 ] SQL: SELECT * FROM `on_user` WHERE ( `account` = '2280259901@qq.com' ) AND ( `status` > 0 ) LIMIT 1  [ RunTime:0.062761s ]
+[ 2014-07-14T21:41:57+08:00 ] SQL: UPDATE `on_user` SET `last_login_time`=1405345317,`login_count`=login_count+1,`last_login_ip`='127.0.0.1' WHERE id='70' [ RunTime:0.000955s ]
+[ 2014-07-14T21:41:57+08:00 ] NOTIC: [8] Undefined index: administrator RBAC.class.php 第 92 行.
+[ 2014-07-14T21:41:57+08:00 ] SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='70' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000596s ]
+[ 2014-07-14T21:41:57+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() RBAC.class.php 第 221 行.
+[ 2014-07-14T21:41:59+08:00 ] NOTIC: [2048] Declaration of IndexAction::index() should be compatible with that of CommonAction::index() IndexAction.class.php 第 2 行.
+[ 2014-07-14T21:41:59+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.005523s ]
+[ 2014-07-14T21:41:59+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.087119s ]
+[ 2014-07-14T21:41:59+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) [ RunTime:0.000798s ]
+[ 2014-07-14T21:41:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) LIMIT 1  [ RunTime:0.000544s ]
+[ 2014-07-14T21:41:59+08:00 ] NOTIC: [8] Undefined index: restaurant_id IndexAction.class.php 第 74 行.
+[ 2014-07-14T21:41:59+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = null ) LIMIT 1  [ RunTime:0.013735s ]
+[ 2014-07-14T21:41:59+08:00 ] NOTIC: [8] Undefined index:  8036b6ce8dcda916f02254a7b19498b1.php 第 36 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index: 2c0e4c1dc493929e860d2aabb450795d RBAC.class.php 第 176 行.
+[ 2014-07-14T21:42:01+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.006403s ]
+[ 2014-07-14T21:42:01+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.001027s ]
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with that of CommonAction::index() RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index: 1b0738117196b73249c91d6d235923af RBAC.class.php 第 176 行.
+[ 2014-07-14T21:42:01+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.170798s ]
+[ 2014-07-14T21:42:01+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-07-14T21:42:01+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.009014s ]

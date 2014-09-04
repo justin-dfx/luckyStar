@@ -1,0 +1,7 @@
+[ 2013-05-04T17:19:51+08:00 ] ERR: (ThinkException) Model:resume您所请求的方法不存在！
+[ 2013-05-04T17:20:08+08:00 ] ERR: (ThinkException) Model:resume您所请求的方法不存在！
+[ 2013-05-04T17:20:10+08:00 ] ERR: (ThinkException) Model:forbid您所请求的方法不存在！
+[ 2013-05-04T17:23:34+08:00 ] ERR: (ThinkException) Model:forbid您所请求的方法不存在！
+[ 2013-05-04T17:24:09+08:00 ] ERR: (ThinkException) Model:forbid您所请求的方法不存在！
+[ 2013-05-04T17:28:13+08:00 ] ERR: (ThinkException) 无法加载模块RestaurantMember?m=RestaurantMember
+[ 2013-05-04T17:44:47+08:00 ] ERR: (ThinkException) XML标签语法错误 : condition='$vo['business_status'] eq 0'

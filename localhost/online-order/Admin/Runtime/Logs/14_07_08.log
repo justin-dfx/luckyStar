@@ -1,0 +1,623 @@
+[ 2014-07-08T16:43:46+08:00 ] ERR: (ThinkException) MySQL server has gone away
+[ 2014-07-08T16:47:22+08:00 ] ERR: (ThinkException) MySQL server has gone away
+[ 2014-07-08T17:00:16+08:00 ] ERR: (ThinkException) MySQL server has gone away
+[ 2014-07-08T17:01:35+08:00 ] ERR: (ThinkException) MySQL server has gone away
+[ 2014-07-08T17:02:04+08:00 ] SQL: SHOW COLUMNS FROM on_user [ RunTime:0.000851s ]
+[ 2014-07-08T17:02:04+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:04+08:00 ] SQL: SELECT * FROM `on_user` WHERE ( `account` = '2280259901@qq.com' ) AND ( `status` > 0 ) LIMIT 1  [ RunTime:0.000248s ]
+[ 2014-07-08T17:02:09+08:00 ] SQL: SHOW COLUMNS FROM on_user [ RunTime:0.000861s ]
+[ 2014-07-08T17:02:09+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:09+08:00 ] SQL: SELECT * FROM `on_user` WHERE ( `account` = '2280259901@qq.com' ) AND ( `status` > 0 ) LIMIT 1  [ RunTime:0.000238s ]
+[ 2014-07-08T17:02:09+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:09+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:09+08:00 ] SQL: UPDATE `on_user` SET `last_login_time`=1404810129,`login_count`=login_count+1,`last_login_ip`='211.137.243.205' WHERE id='70' [ RunTime:0.000221s ]
+[ 2014-07-08T17:02:09+08:00 ] NOTIC: [8] Undefined index: administrator RBAC.class.php 第 92 行.
+[ 2014-07-08T17:02:09+08:00 ] SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='70' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000150s ]
+[ 2014-07-08T17:02:09+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() RBAC.class.php 第 221 行.
+[ 2014-07-08T17:02:11+08:00 ] NOTIC: [2048] Declaration of IndexAction::index() should be compatible with CommonAction::index($templateFile = false) IndexAction.class.php 第 2 行.
+[ 2014-07-08T17:02:11+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001258s ]
+[ 2014-07-08T17:02:11+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000643s ]
+[ 2014-07-08T17:02:11+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:11+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) [ RunTime:0.000261s ]
+[ 2014-07-08T17:02:11+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:11+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) LIMIT 1  [ RunTime:0.000146s ]
+[ 2014-07-08T17:02:11+08:00 ] NOTIC: [8] Undefined index: restaurant_id IndexAction.class.php 第 74 行.
+[ 2014-07-08T17:02:11+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = null ) LIMIT 1  [ RunTime:0.000146s ]
+[ 2014-07-08T17:02:11+08:00 ] NOTIC: [8] Undefined index:  8036b6ce8dcda916f02254a7b19498b1.php 第 36 行.
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [8] Undefined index: 2c0e4c1dc493929e860d2aabb450795d RBAC.class.php 第 176 行.
+[ 2014-07-08T17:02:28+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001283s ]
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:28+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000267s ]
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-07-08T17:02:28+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-07-08T17:02:29+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:02:29+08:00 ] NOTIC: [8] Undefined index: 1b0738117196b73249c91d6d235923af RBAC.class.php 第 176 行.
+[ 2014-07-08T17:02:29+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.000724s ]
+[ 2014-07-08T17:02:29+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-07-08T17:02:29+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:29+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000260s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8] Undefined index: 04ef2f8116b04eb7cf65e9bf179e7d58 RBAC.class.php 第 176 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000827s ]
+[ 2014-07-08T17:02:37+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000642s ]
+[ 2014-07-08T17:02:37+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000629s ]
+[ 2014-07-08T17:02:37+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000533s ]
+[ 2014-07-08T17:02:37+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000484s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000244s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000163s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000202s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000211s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000185s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000203s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000213s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000214s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000178s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000157s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000178s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000152s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '4' ) [ RunTime:0.000149s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '3' ) [ RunTime:0.000152s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '2' ) [ RunTime:0.000149s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:37+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '1' ) [ RunTime:0.000183s ]
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:02:37+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:02:43+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:43+08:00 ] NOTIC: [8] Undefined index: 5773965fabe43e03292ad7344eae8e81 RBAC.class.php 第 176 行.
+[ 2014-07-08T17:02:43+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000834s ]
+[ 2014-07-08T17:02:43+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000516s ]
+[ 2014-07-08T17:02:43+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:43+08:00 ] SQL: DELETE FROM `on_packagelist` WHERE ( `id` = '1' ) [ RunTime:0.000213s ]
+[ 2014-07-08T17:02:43+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:43+08:00 ] SQL: DELETE FROM `on_package_group` WHERE ( `package_id` = '1' ) [ RunTime:0.000122s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000580s ]
+[ 2014-07-08T17:02:44+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000598s ]
+[ 2014-07-08T17:02:44+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000667s ]
+[ 2014-07-08T17:02:44+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000564s ]
+[ 2014-07-08T17:02:44+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000480s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000204s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000167s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000225s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000211s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000186s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000206s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000181s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000224s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000174s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000161s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000156s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000157s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '4' ) [ RunTime:0.000176s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '3' ) [ RunTime:0.000153s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:44+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '2' ) [ RunTime:0.000150s ]
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:02:44+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000810s ]
+[ 2014-07-08T17:02:48+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000531s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: DELETE FROM `on_packagelist` WHERE ( `id` = '2' ) [ RunTime:0.000209s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: DELETE FROM `on_package_group` WHERE ( `package_id` = '2' ) [ RunTime:0.000142s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000779s ]
+[ 2014-07-08T17:02:48+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000603s ]
+[ 2014-07-08T17:02:48+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000588s ]
+[ 2014-07-08T17:02:48+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000553s ]
+[ 2014-07-08T17:02:48+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000522s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000209s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000171s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000197s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000201s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000210s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000178s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000178s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000198s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000168s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000185s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000151s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000151s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '4' ) [ RunTime:0.000153s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:48+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '3' ) [ RunTime:0.000149s ]
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:02:48+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000819s ]
+[ 2014-07-08T17:02:52+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000493s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: DELETE FROM `on_packagelist` WHERE ( `id` = '3' ) [ RunTime:0.000238s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: DELETE FROM `on_package_group` WHERE ( `package_id` = '3' ) [ RunTime:0.000122s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000749s ]
+[ 2014-07-08T17:02:52+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000586s ]
+[ 2014-07-08T17:02:52+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000597s ]
+[ 2014-07-08T17:02:52+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000568s ]
+[ 2014-07-08T17:02:52+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000509s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000211s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000165s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000198s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000204s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000209s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000181s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000179s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000201s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000170s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000180s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000155s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000152s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:52+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '4' ) [ RunTime:0.000392s ]
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:02:52+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:02:55+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:55+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.001244s ]
+[ 2014-07-08T17:02:55+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000534s ]
+[ 2014-07-08T17:02:55+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:55+08:00 ] SQL: DELETE FROM `on_packagelist` WHERE ( `id` = '4' ) [ RunTime:0.000214s ]
+[ 2014-07-08T17:02:55+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:55+08:00 ] SQL: DELETE FROM `on_package_group` WHERE ( `package_id` = '4' ) [ RunTime:0.000125s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000709s ]
+[ 2014-07-08T17:02:56+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000609s ]
+[ 2014-07-08T17:02:56+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000594s ]
+[ 2014-07-08T17:02:56+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000539s ]
+[ 2014-07-08T17:02:56+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000521s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000207s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000183s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000197s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000204s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000192s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000180s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000179s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000189s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000184s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000165s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000154s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:02:56+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '5' ) [ RunTime:0.000150s ]
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:02:56+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000783s ]
+[ 2014-07-08T17:03:00+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000499s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: DELETE FROM `on_packagelist` WHERE ( `id` = '5' ) [ RunTime:0.000234s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: DELETE FROM `on_package_group` WHERE ( `package_id` = '5' ) [ RunTime:0.000125s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000757s ]
+[ 2014-07-08T17:03:00+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000629s ]
+[ 2014-07-08T17:03:00+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000644s ]
+[ 2014-07-08T17:03:00+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000566s ]
+[ 2014-07-08T17:03:00+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000489s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000237s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000169s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000206s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000225s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000199s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000207s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000184s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000189s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000176s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000160s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:00+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '6' ) [ RunTime:0.000182s ]
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:03:00+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000787s ]
+[ 2014-07-08T17:03:03+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000491s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: DELETE FROM `on_packagelist` WHERE ( `id` = '6' ) [ RunTime:0.000230s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: DELETE FROM `on_package_group` WHERE ( `package_id` = '6' ) [ RunTime:0.000119s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000606s ]
+[ 2014-07-08T17:03:03+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000583s ]
+[ 2014-07-08T17:03:03+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000612s ]
+[ 2014-07-08T17:03:03+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000568s ]
+[ 2014-07-08T17:03:03+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000486s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000200s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000160s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000225s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000203s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000190s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000177s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000181s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000197s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000164s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:03+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '12' ) [ RunTime:0.000156s ]
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:03:03+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000857s ]
+[ 2014-07-08T17:03:07+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000543s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: DELETE FROM `on_packagelist` WHERE ( `id` = '12' ) [ RunTime:0.000229s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: DELETE FROM `on_package_group` WHERE ( `package_id` = '12' ) [ RunTime:0.000151s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [2048] Declaration of MenusAction::index() should be compatible with CommonAction::index($templateFile = false) MenusAction.class.php 第 3 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SHOW COLUMNS FROM on_cuisine [ RunTime:0.000713s ]
+[ 2014-07-08T17:03:07+08:00 ] SQL: SHOW COLUMNS FROM on_menugroup [ RunTime:0.000588s ]
+[ 2014-07-08T17:03:07+08:00 ] SQL: SHOW COLUMNS FROM on_item [ RunTime:0.000622s ]
+[ 2014-07-08T17:03:07+08:00 ] SQL: SHOW COLUMNS FROM on_packagelist [ RunTime:0.000585s ]
+[ 2014-07-08T17:03:07+08:00 ] SQL: SHOW COLUMNS FROM on_package_group [ RunTime:0.000487s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8] Undefined index: cuisine_id MenusAction.class.php 第 16 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc [ RunTime:0.000229s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_cuisine` WHERE ( `restaurant_id` = '1' ) ORDER BY ordering asc LIMIT 1  [ RunTime:0.000164s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_menugroup` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY ordering asc [ RunTime:0.000219s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '3' ) ORDER BY id desc [ RunTime:0.000204s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '4' ) ORDER BY id desc [ RunTime:0.000195s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '5' ) ORDER BY id desc [ RunTime:0.000183s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_item` WHERE ( `group_id` = '6' ) ORDER BY id desc [ RunTime:0.000180s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_packagelist` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) ORDER BY id desc [ RunTime:0.000202s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:03:07+08:00 ] SQL: SELECT * FROM `on_package_group` WHERE ( `restaurant_id` = '1' ) AND ( `cuisine_id` = '20' ) AND ( `package_id` = '14' ) [ RunTime:0.000175s ]
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8] Undefined variable: packageGroupList MenusAction.class.php 第 56 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8] Undefined variable: itemlist 5a8141cd8b8dcbca348090d9838bbca0.php 第 1 行.
+[ 2014-07-08T17:03:07+08:00 ] NOTIC: [8] Undefined index:  5a8141cd8b8dcbca348090d9838bbca0.php 第 24 行.
+[ 2014-07-08T17:05:01+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001200s ]
+[ 2014-07-08T17:05:01+08:00 ] SQL: SHOW COLUMNS FROM on_user [ RunTime:0.000627s ]
+[ 2014-07-08T17:05:01+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:01+08:00 ] SQL: SELECT * FROM `on_user` WHERE ( `id` = '70' ) LIMIT 1  [ RunTime:0.000225s ]
+[ 2014-07-08T17:05:01+08:00 ] NOTIC: [8] Undefined index: btnSave PublicAction.class.php 第 274 行.
+[ 2014-07-08T17:05:01+08:00 ] NOTIC: [8] Undefined index:  720fccc581edc7e4f2161ca39c67db22.php 第 26 行.
+[ 2014-07-08T17:05:01+08:00 ] NOTIC: [8] Undefined index: logo 720fccc581edc7e4f2161ca39c67db22.php 第 222 行.
+[ 2014-07-08T17:05:01+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:05:01+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.000669s ]
+[ 2014-07-08T17:05:01+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-07-08T17:05:01+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:01+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000260s ]
+[ 2014-07-08T17:05:09+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:05:09+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001289s ]
+[ 2014-07-08T17:05:09+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:09+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000244s ]
+[ 2014-07-08T17:05:09+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-07-08T17:05:09+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-07-08T17:05:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-07-08T17:05:09+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-07-08T17:05:09+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-07-08T17:05:10+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:05:10+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.000715s ]
+[ 2014-07-08T17:05:10+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-07-08T17:05:10+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:10+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000256s ]
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [2048] Declaration of OrderAction::index() should be compatible with CommonAction::index($templateFile = false) OrderAction.class.php 第 3 行.
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8] Undefined index: c22e6458f35ac362ff2f3fe5c0592091 RBAC.class.php 第 176 行.
+[ 2014-07-08T17:05:14+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000881s ]
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:14+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000193s ]
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8] Undefined index: status OrderAction.class.php 第 69 行.
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8] Undefined index: status OrderAction.class.php 第 86 行.
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:14+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member.telephone,on_member.address,on_billhead.id,on_billhead.restaurant_id,on_billhead.bh_no,on_billhead.bh_type,on_billhead.bh_status,on_billhead.bh_create_time FROM `on_billhead` LEFT JOIN on_member ON on_billhead.bh_customer_id = on_member.id WHERE ( `restaurant_id` = '1' ) AND ( `bh_status` = 3 ) [ RunTime:0.000242s ]
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() OrderAction.class.php 第 106 行.
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8] Undefined index:  9bc80a719b017a2441aa9ccb39715f96.php 第 37 行.
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8] Undefined index: status 9bc80a719b017a2441aa9ccb39715f96.php 第 100 行.
+[ 2014-07-08T17:05:14+08:00 ] NOTIC: [8] Undefined index: status 9bc80a719b017a2441aa9ccb39715f96.php 第 100 行.
+[ 2014-07-08T17:05:18+08:00 ] ERR: (ThinkException) MySQL server has gone away
+[ 2014-07-08T17:05:18+08:00 ] NOTIC: [2048] Declaration of OrderAction::index() should be compatible with CommonAction::index($templateFile = false) OrderAction.class.php 第 3 行.
+[ 2014-07-08T17:05:18+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000925s ]
+[ 2014-07-08T17:05:18+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:18+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000192s ]
+[ 2014-07-08T17:05:18+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:18+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member.telephone,on_member.address,on_billhead.id,on_billhead.restaurant_id,on_billhead.bh_no,on_billhead.bh_type,on_billhead.bh_status,on_billhead.bh_create_time FROM `on_billhead` LEFT JOIN on_member ON on_billhead.bh_customer_id = on_member.id WHERE ( on_billhead.restaurant_id = '1' ) AND ( on_billhead.bh_status = 0 ) ORDER BY id desc [ RunTime:0.000283s ]
+[ 2014-07-08T17:05:18+08:00 ] NOTIC: [8] Undefined index:  9bc80a719b017a2441aa9ccb39715f96.php 第 37 行.
+[ 2014-07-08T17:05:23+08:00 ] NOTIC: [2048] Declaration of OrderAction::index() should be compatible with CommonAction::index($templateFile = false) OrderAction.class.php 第 3 行.
+[ 2014-07-08T17:05:23+08:00 ] NOTIC: [8] Undefined index: 218570eabe7dfd5c36cbb037b62e0c59 RBAC.class.php 第 176 行.
+[ 2014-07-08T17:05:23+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000917s ]
+[ 2014-07-08T17:05:23+08:00 ] SQL: SHOW COLUMNS FROM on_billitem [ RunTime:0.000509s ]
+[ 2014-07-08T17:05:23+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:23+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member.telephone,on_member.address,on_billhead.id,on_billhead.restaurant_id,on_billhead.bh_no,on_billhead.bh_type,on_billhead.bh_status,on_billhead.bh_subtotal,on_billhead.bh_discount,on_billhead.bh_taxamt,on_billhead.bh_delivery,on_billhead.bh_tips,on_billhead.bh_total,on_billhead.bh_payment,on_billhead.bh_address,on_billhead.bh_create_time,on_billitem.bh_id,on_billitem.item_id,on_billitem.bi_identifier,on_billitem.bi_price,on_billnote.bn_note,on_billnote.bh_id,on_restaurant_member.nickname,on_item.item_name,on_billitem.bi_quantity,on_item.price,on_billitem.bi_amount FROM `on_billhead` LEFT JOIN on_billitem ON on_billhead.id = on_billitem.bh_id LEFT JOIN on_member ON on_billhead.bh_customer_id = on_member.id LEFT JOIN on_billnote ON on_billhead.id = on_billnote.bh_id LEFT JOIN on_billattribute ON on_billhead.id = on_billattribute.bh_id LEFT JOIN on_restaurant_member ON on_billhead.restaurant_id = on_restaurant_member.id LEFT JOIN on_item ON on_billitem.item_id = on_item.id WHERE ( on_billhead.id = '65' ) LIMIT 1  [ RunTime:0.000472s ]
+[ 2014-07-08T17:05:23+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:23+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:23+08:00 ] SQL: SELECT * FROM `on_billitem` WHERE ( `restaurant_id` = '1' ) AND ( `bh_id` = '65' ) [ RunTime:0.000195s ]
+[ 2014-07-08T17:05:23+08:00 ] NOTIC: [8] Undefined index:  cdd074907de3a26fa88150d3d1da3707.php 第 42 行.
+[ 2014-07-08T17:05:28+08:00 ] NOTIC: [2048] Declaration of IndexAction::index() should be compatible with CommonAction::index($templateFile = false) IndexAction.class.php 第 2 行.
+[ 2014-07-08T17:05:28+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001202s ]
+[ 2014-07-08T17:05:28+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000632s ]
+[ 2014-07-08T17:05:28+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:28+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) [ RunTime:0.000238s ]
+[ 2014-07-08T17:05:28+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:28+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) LIMIT 1  [ RunTime:0.000147s ]
+[ 2014-07-08T17:05:28+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:28+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000135s ]
+[ 2014-07-08T17:05:28+08:00 ] NOTIC: [8] Undefined index:  8036b6ce8dcda916f02254a7b19498b1.php 第 36 行.
+[ 2014-07-08T17:05:32+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:05:32+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001222s ]
+[ 2014-07-08T17:05:32+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:32+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000236s ]
+[ 2014-07-08T17:05:32+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-07-08T17:05:32+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-07-08T17:05:32+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-07-08T17:05:32+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-07-08T17:05:32+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-07-08T17:05:33+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:05:33+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.000715s ]
+[ 2014-07-08T17:05:33+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-07-08T17:05:33+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:33+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000275s ]
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [2048] Declaration of OrderAction::index() should be compatible with CommonAction::index($templateFile = false) OrderAction.class.php 第 3 行.
+[ 2014-07-08T17:05:35+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000868s ]
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:35+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000189s ]
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [8] Undefined index: status OrderAction.class.php 第 69 行.
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [8] Undefined index: status OrderAction.class.php 第 86 行.
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:35+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member.telephone,on_member.address,on_billhead.id,on_billhead.restaurant_id,on_billhead.bh_no,on_billhead.bh_type,on_billhead.bh_status,on_billhead.bh_create_time FROM `on_billhead` LEFT JOIN on_member ON on_billhead.bh_customer_id = on_member.id WHERE ( `restaurant_id` = '1' ) AND ( `bh_status` = 3 ) [ RunTime:0.000240s ]
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() OrderAction.class.php 第 106 行.
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [8] Undefined index:  9bc80a719b017a2441aa9ccb39715f96.php 第 37 行.
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [8] Undefined index: status 9bc80a719b017a2441aa9ccb39715f96.php 第 100 行.
+[ 2014-07-08T17:05:35+08:00 ] NOTIC: [8] Undefined index: status 9bc80a719b017a2441aa9ccb39715f96.php 第 100 行.
+[ 2014-07-08T17:05:39+08:00 ] NOTIC: [2048] Declaration of OrderAction::index() should be compatible with CommonAction::index($templateFile = false) OrderAction.class.php 第 3 行.
+[ 2014-07-08T17:05:39+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000876s ]
+[ 2014-07-08T17:05:39+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:39+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000202s ]
+[ 2014-07-08T17:05:39+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:39+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member.telephone,on_member.address,on_billhead.id,on_billhead.restaurant_id,on_billhead.bh_no,on_billhead.bh_type,on_billhead.bh_status,on_billhead.bh_create_time FROM `on_billhead` LEFT JOIN on_member ON on_billhead.bh_customer_id = on_member.id WHERE ( on_billhead.restaurant_id = '1' ) AND ( on_billhead.bh_status = 0 ) ORDER BY id desc [ RunTime:0.000282s ]
+[ 2014-07-08T17:05:39+08:00 ] NOTIC: [8] Undefined index:  9bc80a719b017a2441aa9ccb39715f96.php 第 37 行.
+[ 2014-07-08T17:05:44+08:00 ] NOTIC: [2048] Declaration of OrderAction::index() should be compatible with CommonAction::index($templateFile = false) OrderAction.class.php 第 3 行.
+[ 2014-07-08T17:05:44+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000936s ]
+[ 2014-07-08T17:05:44+08:00 ] SQL: SHOW COLUMNS FROM on_billitem [ RunTime:0.000536s ]
+[ 2014-07-08T17:05:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:44+08:00 ] SQL: SELECT on_member.account,on_member.email,on_member.telephone,on_member.address,on_billhead.id,on_billhead.restaurant_id,on_billhead.bh_no,on_billhead.bh_type,on_billhead.bh_status,on_billhead.bh_subtotal,on_billhead.bh_discount,on_billhead.bh_taxamt,on_billhead.bh_delivery,on_billhead.bh_tips,on_billhead.bh_total,on_billhead.bh_payment,on_billhead.bh_address,on_billhead.bh_create_time,on_billitem.bh_id,on_billitem.item_id,on_billitem.bi_identifier,on_billitem.bi_price,on_billnote.bn_note,on_billnote.bh_id,on_restaurant_member.nickname,on_item.item_name,on_billitem.bi_quantity,on_item.price,on_billitem.bi_amount FROM `on_billhead` LEFT JOIN on_billitem ON on_billhead.id = on_billitem.bh_id LEFT JOIN on_member ON on_billhead.bh_customer_id = on_member.id LEFT JOIN on_billnote ON on_billhead.id = on_billnote.bh_id LEFT JOIN on_billattribute ON on_billhead.id = on_billattribute.bh_id LEFT JOIN on_restaurant_member ON on_billhead.restaurant_id = on_restaurant_member.id LEFT JOIN on_item ON on_billitem.item_id = on_item.id WHERE ( on_billhead.id = '65' ) LIMIT 1  [ RunTime:0.000459s ]
+[ 2014-07-08T17:05:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:44+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:05:44+08:00 ] SQL: SELECT * FROM `on_billitem` WHERE ( `restaurant_id` = '1' ) AND ( `bh_id` = '65' ) [ RunTime:0.000193s ]
+[ 2014-07-08T17:05:44+08:00 ] NOTIC: [8] Undefined index:  cdd074907de3a26fa88150d3d1da3707.php 第 42 行.
+[ 2014-07-08T17:08:37+08:00 ] SQL: SHOW COLUMNS FROM on_user [ RunTime:0.000896s ]
+[ 2014-07-08T17:08:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:08:37+08:00 ] SQL: SELECT * FROM `on_user` WHERE ( `account` = '2280259901@qq.com' ) AND ( `status` > 0 ) LIMIT 1  [ RunTime:0.000245s ]
+[ 2014-07-08T17:08:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:08:37+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:08:37+08:00 ] SQL: UPDATE `on_user` SET `last_login_time`=1404810517,`login_count`=login_count+1,`last_login_ip`='211.137.243.205' WHERE id='70' [ RunTime:0.000222s ]
+[ 2014-07-08T17:08:37+08:00 ] NOTIC: [8] Undefined index: administrator RBAC.class.php 第 92 行.
+[ 2014-07-08T17:08:37+08:00 ] SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='70' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000141s ]
+[ 2014-07-08T17:08:37+08:00 ] NOTIC: [2] Invalid argument supplied for foreach() RBAC.class.php 第 221 行.
+[ 2014-07-08T17:08:38+08:00 ] NOTIC: [2048] Declaration of IndexAction::index() should be compatible with CommonAction::index($templateFile = false) IndexAction.class.php 第 2 行.
+[ 2014-07-08T17:08:38+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001165s ]
+[ 2014-07-08T17:08:38+08:00 ] SQL: SHOW COLUMNS FROM on_billhead [ RunTime:0.000624s ]
+[ 2014-07-08T17:08:38+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:08:38+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) [ RunTime:0.000229s ]
+[ 2014-07-08T17:08:38+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:08:38+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_restaurant_member` WHERE ( `user_id` = '70' ) LIMIT 1  [ RunTime:0.000142s ]
+[ 2014-07-08T17:08:38+08:00 ] NOTIC: [8] Undefined index: restaurant_id IndexAction.class.php 第 74 行.
+[ 2014-07-08T17:08:38+08:00 ] SQL: SELECT COUNT(*) AS tp_count FROM `on_billhead` WHERE ( `restaurant_id` = null ) LIMIT 1  [ RunTime:0.000144s ]
+[ 2014-07-08T17:08:38+08:00 ] NOTIC: [8] Undefined index:  8036b6ce8dcda916f02254a7b19498b1.php 第 36 行.
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [8] Undefined index: 2c0e4c1dc493929e860d2aabb450795d RBAC.class.php 第 176 行.
+[ 2014-07-08T17:08:45+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001183s ]
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:08:45+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000235s ]
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-07-08T17:08:45+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-07-08T17:16:32+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:16:32+08:00 ] NOTIC: [8] Undefined index: 1b0738117196b73249c91d6d235923af RBAC.class.php 第 176 行.
+[ 2014-07-08T17:16:32+08:00 ] SQL: SHOW COLUMNS FROM on_opentime [ RunTime:0.000748s ]
+[ 2014-07-08T17:16:32+08:00 ] NOTIC: [8] Undefined index: update RestaurantDetailsAction.class.php 第 149 行.
+[ 2014-07-08T17:16:32+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:16:32+08:00 ] SQL: SELECT * FROM `on_opentime` WHERE ( `restaurant_id` = '1' ) LIMIT 1  [ RunTime:0.000260s ]
+[ 2014-07-08T17:16:43+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:16:43+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001193s ]
+[ 2014-07-08T17:16:43+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:16:43+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000234s ]
+[ 2014-07-08T17:16:43+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-07-08T17:16:43+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-07-08T17:16:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-07-08T17:16:43+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-07-08T17:16:43+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.
+[ 2014-07-08T17:17:10+08:00 ] NOTIC: [2048] Declaration of RestaurantDetailsAction::index() should be compatible with CommonAction::index($templateFile = false) RestaurantDetailsAction.class.php 第 3 行.
+[ 2014-07-08T17:17:10+08:00 ] SQL: SHOW COLUMNS FROM on_restaurant_member [ RunTime:0.001170s ]
+[ 2014-07-08T17:17:10+08:00 ] NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. DbMysql.class.php 第 403 行.
+[ 2014-07-08T17:17:10+08:00 ] SQL: SELECT * FROM `on_restaurant_member` WHERE ( `id` = '1' ) LIMIT 1  [ RunTime:0.000243s ]
+[ 2014-07-08T17:17:10+08:00 ] NOTIC: [8] Undefined index: btnSave RestaurantDetailsAction.class.php 第 99 行.
+[ 2014-07-08T17:17:10+08:00 ] NOTIC: [8] Undefined index:  02e46478ffea1bfab27c1bde59ca83ef.php 第 43 行.
+[ 2014-07-08T17:17:10+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 294 行.
+[ 2014-07-08T17:17:10+08:00 ] NOTIC: [8] Undefined index: announcements_status 02e46478ffea1bfab27c1bde59ca83ef.php 第 295 行.
+[ 2014-07-08T17:17:10+08:00 ] NOTIC: [8] Undefined index: facebook_link 02e46478ffea1bfab27c1bde59ca83ef.php 第 316 行.

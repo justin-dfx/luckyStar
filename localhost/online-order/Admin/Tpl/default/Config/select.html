@@ -1,0 +1,8 @@
+<div class="unit">
+	<label style="width:160px;">{$vo['label']}:</label>
+	<select name="attr[{$vo['name']}]" alt="{$vo['value']}">
+    <volist name="vo['data_source']" id="data_source">
+		<option <eq name="data_source['value']" value="$vo['attr_value']" >selected</eq> value="{$data_source['value']}">{$data_source['title']}</option>
+    </volist>
+	</select><p style="color:#999;">&nbsp;{$vo['remark']}</p>
+</div>
